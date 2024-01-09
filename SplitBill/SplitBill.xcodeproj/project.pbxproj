@@ -24,6 +24,91 @@
 		4C66CC1B2B4DA2D6004D5FF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C66CC1E2B4DA2D6004D5FF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C66CC202B4DA2D6004D5FF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C66CC272B4DB238004D5FF3 /* SF-Pro-Text-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-ThinItalic.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Text-ThinItalic.otf"; sourceTree = "<group>"; };
+		4C66CC282B4DB238004D5FF3 /* SF-Compact-Text-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Text-BoldItalic.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Text-BoldItalic.otf"; sourceTree = "<group>"; };
+		4C66CC292B4DB238004D5FF3 /* SF-Compact-Text-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Text-LightItalic.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Text-LightItalic.otf"; sourceTree = "<group>"; };
+		4C66CC2A2B4DB238004D5FF3 /* SF-Pro-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-SemiboldItalic.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		4C66CC2B2B4DB238004D5FF3 /* SF-Compact-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Text-Light.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Text-Light.otf"; sourceTree = "<group>"; };
+		4C66CC2C2B4DB238004D5FF3 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Regular.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		4C66CC2D2B4DB238004D5FF3 /* SF-Compact-Text-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Text-Ultralight.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Text-Ultralight.otf"; sourceTree = "<group>"; };
+		4C66CC2E2B4DB238004D5FF3 /* SF-Compact-Text-UltralightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Text-UltralightItalic.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Text-UltralightItalic.otf"; sourceTree = "<group>"; };
+		4C66CC2F2B4DB238004D5FF3 /* SF-Compact-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Italic.ttf"; path = "../../../../../../../Library/Fonts/SF-Compact-Italic.ttf"; sourceTree = "<group>"; };
+		4C66CC302B4DB238004D5FF3 /* SF-Pro-Text-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-Heavy.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Text-Heavy.otf"; sourceTree = "<group>"; };
+		4C66CC312B4DB238004D5FF3 /* SF-Compact-Display-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Display-Ultralight.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Display-Ultralight.otf"; sourceTree = "<group>"; };
+		4C66CC322B4DB238004D5FF3 /* SF-Compact-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Rounded-Bold.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Rounded-Bold.otf"; sourceTree = "<group>"; };
+		4C66CC332B4DB238004D5FF3 /* SF-Compact-Text-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Text-RegularItalic.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Text-RegularItalic.otf"; sourceTree = "<group>"; };
+		4C66CC342B4DB238004D5FF3 /* SF-Compact-Rounded-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Rounded-Ultralight.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Rounded-Ultralight.otf"; sourceTree = "<group>"; };
+		4C66CC352B4DB238004D5FF3 /* SF-Compact-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Display-Medium.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Display-Medium.otf"; sourceTree = "<group>"; };
+		4C66CC362B4DB238004D5FF3 /* SF-Compact-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Display-Light.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Display-Light.otf"; sourceTree = "<group>"; };
+		4C66CC372B4DB238004D5FF3 /* SF-Pro-Text-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-BoldItalic.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Text-BoldItalic.otf"; sourceTree = "<group>"; };
+		4C66CC382B4DB238004D5FF3 /* SF-Pro-Text-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-BlackItalic.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Text-BlackItalic.otf"; sourceTree = "<group>"; };
+		4C66CC392B4DB238004D5FF3 /* SF-Pro-Text-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-Black.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Text-Black.otf"; sourceTree = "<group>"; };
+		4C66CC3A2B4DB238004D5FF3 /* SF-Compact-Text-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Text-HeavyItalic.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Text-HeavyItalic.otf"; sourceTree = "<group>"; };
+		4C66CC3B2B4DB238004D5FF3 /* SF-Compact-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Text-Regular.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Text-Regular.otf"; sourceTree = "<group>"; };
+		4C66CC3C2B4DB238004D5FF3 /* SF-Compact-Text-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Text-Heavy.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Text-Heavy.otf"; sourceTree = "<group>"; };
+		4C66CC3D2B4DB238004D5FF3 /* SF-Pro-Display-UltralightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-UltralightItalic.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Display-UltralightItalic.otf"; sourceTree = "<group>"; };
+		4C66CC3E2B4DB238004D5FF3 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Bold.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		4C66CC3F2B4DB238004D5FF3 /* SF-Pro-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Bold.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Rounded-Bold.otf"; sourceTree = "<group>"; };
+		4C66CC402B4DB238004D5FF3 /* SF-Pro-Text-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-LightItalic.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Text-LightItalic.otf"; sourceTree = "<group>"; };
+		4C66CC412B4DB238004D5FF3 /* SF-Pro-Display-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-BoldItalic.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Display-BoldItalic.otf"; sourceTree = "<group>"; };
+		4C66CC422B4DB238004D5FF3 /* SF-Pro-Display-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-BlackItalic.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Display-BlackItalic.otf"; sourceTree = "<group>"; };
+		4C66CC432B4DB238004D5FF3 /* SF-Pro-Text-UltralightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-UltralightItalic.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Text-UltralightItalic.otf"; sourceTree = "<group>"; };
+		4C66CC442B4DB238004D5FF3 /* SF-Pro-Display-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-LightItalic.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Display-LightItalic.otf"; sourceTree = "<group>"; };
+		4C66CC452B4DB238004D5FF3 /* SF-Pro-Display-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-ThinItalic.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Display-ThinItalic.otf"; sourceTree = "<group>"; };
+		4C66CC462B4DB238004D5FF3 /* SF-Compact.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact.ttf"; path = "../../../../../../../Library/Fonts/SF-Compact.ttf"; sourceTree = "<group>"; };
+		4C66CC472B4DB238004D5FF3 /* SF-Pro-Rounded-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Black.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Rounded-Black.otf"; sourceTree = "<group>"; };
+		4C66CC482B4DB238004D5FF3 /* SF-Pro-Rounded-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Regular.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Rounded-Regular.otf"; sourceTree = "<group>"; };
+		4C66CC492B4DB238004D5FF3 /* SF-Pro-Text-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-Thin.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Text-Thin.otf"; sourceTree = "<group>"; };
+		4C66CC4A2B4DB238004D5FF3 /* SF-Pro-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Light.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Display-Light.otf"; sourceTree = "<group>"; };
+		4C66CC4B2B4DB238004D5FF3 /* SF-Compact-Rounded-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Rounded-Thin.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Rounded-Thin.otf"; sourceTree = "<group>"; };
+		4C66CC4C2B4DB238004D5FF3 /* SF-Pro-Display-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Heavy.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Display-Heavy.otf"; sourceTree = "<group>"; };
+		4C66CC4D2B4DB238004D5FF3 /* SF-Pro-Rounded-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Semibold.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Rounded-Semibold.otf"; sourceTree = "<group>"; };
+		4C66CC4E2B4DB238004D5FF3 /* SF-Compact-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Text-Semibold.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Text-Semibold.otf"; sourceTree = "<group>"; };
+		4C66CC4F2B4DB238004D5FF3 /* SF-Pro-Display-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Thin.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Display-Thin.otf"; sourceTree = "<group>"; };
+		4C66CC502B4DB238004D5FF3 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-Semibold.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
+		4C66CC512B4DB238004D5FF3 /* SF-Pro-Rounded-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Thin.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Rounded-Thin.otf"; sourceTree = "<group>"; };
+		4C66CC522B4DB238004D5FF3 /* SF-Pro-Rounded-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Ultralight.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Rounded-Ultralight.otf"; sourceTree = "<group>"; };
+		4C66CC532B4DB238004D5FF3 /* SF-Compact-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Text-Bold.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Text-Bold.otf"; sourceTree = "<group>"; };
+		4C66CC542B4DB238004D5FF3 /* SF-Compact-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Display-Regular.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Display-Regular.otf"; sourceTree = "<group>"; };
+		4C66CC552B4DB238004D5FF3 /* SF-Compact-Rounded-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Rounded-Semibold.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Rounded-Semibold.otf"; sourceTree = "<group>"; };
+		4C66CC562B4DB238004D5FF3 /* SF-Compact-Text-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Text-ThinItalic.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Text-ThinItalic.otf"; sourceTree = "<group>"; };
+		4C66CC572B4DB238004D5FF3 /* SF-Pro-Display-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Black.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Display-Black.otf"; sourceTree = "<group>"; };
+		4C66CC582B4DB238004D5FF3 /* SF-Compact-Text-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Text-Thin.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Text-Thin.otf"; sourceTree = "<group>"; };
+		4C66CC592B4DB238004D5FF3 /* SF-Compact-Display-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Display-Thin.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Display-Thin.otf"; sourceTree = "<group>"; };
+		4C66CC5A2B4DB238004D5FF3 /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-Regular.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		4C66CC5B2B4DB238004D5FF3 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Semibold.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
+		4C66CC5C2B4DB238004D5FF3 /* SF-Compact-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Text-SemiboldItalic.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		4C66CC5D2B4DB238004D5FF3 /* SF-Pro-Rounded-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Light.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Rounded-Light.otf"; sourceTree = "<group>"; };
+		4C66CC5E2B4DB238004D5FF3 /* SF-Pro-Display-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-RegularItalic.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Display-RegularItalic.otf"; sourceTree = "<group>"; };
+		4C66CC5F2B4DB238004D5FF3 /* SF-Pro-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Italic.ttf"; path = "../../../../../../../Library/Fonts/SF-Pro-Italic.ttf"; sourceTree = "<group>"; };
+		4C66CC602B4DB238004D5FF3 /* SF-Compact-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Display-Bold.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Display-Bold.otf"; sourceTree = "<group>"; };
+		4C66CC612B4DB238004D5FF3 /* SF-Pro-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-Light.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Text-Light.otf"; sourceTree = "<group>"; };
+		4C66CC622B4DB238004D5FF3 /* SF-Compact-Text-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Text-BlackItalic.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Text-BlackItalic.otf"; sourceTree = "<group>"; };
+		4C66CC632B4DB238004D5FF3 /* SF-Compact-Display-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Display-Heavy.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Display-Heavy.otf"; sourceTree = "<group>"; };
+		4C66CC642B4DB238004D5FF3 /* SF-Pro-Text-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-RegularItalic.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Text-RegularItalic.otf"; sourceTree = "<group>"; };
+		4C66CC652B4DB238004D5FF3 /* SF-Compact-Rounded-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Rounded-Light.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Rounded-Light.otf"; sourceTree = "<group>"; };
+		4C66CC662B4DB238004D5FF3 /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-Medium.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
+		4C66CC672B4DB238004D5FF3 /* SF-Pro-Display-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-MediumItalic.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Display-MediumItalic.otf"; sourceTree = "<group>"; };
+		4C66CC682B4DB238004D5FF3 /* SF-Compact-Text-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Text-Black.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Text-Black.otf"; sourceTree = "<group>"; };
+		4C66CC692B4DB238004D5FF3 /* SF-Compact-Display-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Display-Black.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Display-Black.otf"; sourceTree = "<group>"; };
+		4C66CC6A2B4DB238004D5FF3 /* SF-Compact-Text-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Text-MediumItalic.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Text-MediumItalic.otf"; sourceTree = "<group>"; };
+		4C66CC6B2B4DB238004D5FF3 /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-Bold.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
+		4C66CC6C2B4DB238004D5FF3 /* SF-Compact-Rounded-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Rounded-Regular.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Rounded-Regular.otf"; sourceTree = "<group>"; };
+		4C66CC6D2B4DB238004D5FF3 /* SF-Pro-Text-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-HeavyItalic.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Text-HeavyItalic.otf"; sourceTree = "<group>"; };
+		4C66CC6E2B4DB238004D5FF3 /* SF-Compact-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Display-Semibold.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Display-Semibold.otf"; sourceTree = "<group>"; };
+		4C66CC6F2B4DB238004D5FF3 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro.ttf"; path = "../../../../../../../Library/Fonts/SF-Pro.ttf"; sourceTree = "<group>"; };
+		4C66CC702B4DB238004D5FF3 /* SF-Compact-Rounded-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Rounded-Heavy.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Rounded-Heavy.otf"; sourceTree = "<group>"; };
+		4C66CC712B4DB238004D5FF3 /* SF-Compact-Rounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Rounded-Medium.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Rounded-Medium.otf"; sourceTree = "<group>"; };
+		4C66CC722B4DB238004D5FF3 /* SF-Pro-Display-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-SemiboldItalic.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Display-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		4C66CC732B4DB238004D5FF3 /* SF-Pro-Text-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-Ultralight.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Text-Ultralight.otf"; sourceTree = "<group>"; };
+		4C66CC742B4DB238004D5FF3 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Medium.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
+		4C66CC752B4DB238004D5FF3 /* SF-Pro-Display-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Ultralight.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Display-Ultralight.otf"; sourceTree = "<group>"; };
+		4C66CC762B4DB238004D5FF3 /* SF-Pro-Rounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Medium.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Rounded-Medium.otf"; sourceTree = "<group>"; };
+		4C66CC772B4DB238004D5FF3 /* SF-Pro-Rounded-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Heavy.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Rounded-Heavy.otf"; sourceTree = "<group>"; };
+		4C66CC782B4DB238004D5FF3 /* SF-Pro-Display-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-HeavyItalic.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Display-HeavyItalic.otf"; sourceTree = "<group>"; };
+		4C66CC792B4DB238004D5FF3 /* SF-Compact-Rounded-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Rounded-Black.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Rounded-Black.otf"; sourceTree = "<group>"; };
+		4C66CC7A2B4DB238004D5FF3 /* SF-Pro-Text-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-MediumItalic.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Text-MediumItalic.otf"; sourceTree = "<group>"; };
+		4C66CC7B2B4DB238004D5FF3 /* SF-Compact-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Text-Medium.otf"; path = "../../../../../../../Library/Fonts/SF-Compact-Text-Medium.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +141,7 @@
 		4C66CC112B4DA2D5004D5FF3 /* SplitBill */ = {
 			isa = PBXGroup;
 			children = (
+				4C66CC262B4DB1B9004D5FF3 /* CustomFonts */,
 				4C66CC122B4DA2D5004D5FF3 /* AppDelegate.swift */,
 				4C66CC142B4DA2D5004D5FF3 /* SceneDelegate.swift */,
 				4C66CC162B4DA2D5004D5FF3 /* ViewController.swift */,
@@ -65,6 +151,98 @@
 				4C66CC202B4DA2D6004D5FF3 /* Info.plist */,
 			);
 			path = SplitBill;
+			sourceTree = "<group>";
+		};
+		4C66CC262B4DB1B9004D5FF3 /* CustomFonts */ = {
+			isa = PBXGroup;
+			children = (
+				4C66CC692B4DB238004D5FF3 /* SF-Compact-Display-Black.otf */,
+				4C66CC602B4DB238004D5FF3 /* SF-Compact-Display-Bold.otf */,
+				4C66CC632B4DB238004D5FF3 /* SF-Compact-Display-Heavy.otf */,
+				4C66CC362B4DB238004D5FF3 /* SF-Compact-Display-Light.otf */,
+				4C66CC352B4DB238004D5FF3 /* SF-Compact-Display-Medium.otf */,
+				4C66CC542B4DB238004D5FF3 /* SF-Compact-Display-Regular.otf */,
+				4C66CC6E2B4DB238004D5FF3 /* SF-Compact-Display-Semibold.otf */,
+				4C66CC592B4DB238004D5FF3 /* SF-Compact-Display-Thin.otf */,
+				4C66CC312B4DB238004D5FF3 /* SF-Compact-Display-Ultralight.otf */,
+				4C66CC2F2B4DB238004D5FF3 /* SF-Compact-Italic.ttf */,
+				4C66CC792B4DB238004D5FF3 /* SF-Compact-Rounded-Black.otf */,
+				4C66CC322B4DB238004D5FF3 /* SF-Compact-Rounded-Bold.otf */,
+				4C66CC702B4DB238004D5FF3 /* SF-Compact-Rounded-Heavy.otf */,
+				4C66CC652B4DB238004D5FF3 /* SF-Compact-Rounded-Light.otf */,
+				4C66CC712B4DB238004D5FF3 /* SF-Compact-Rounded-Medium.otf */,
+				4C66CC6C2B4DB238004D5FF3 /* SF-Compact-Rounded-Regular.otf */,
+				4C66CC552B4DB238004D5FF3 /* SF-Compact-Rounded-Semibold.otf */,
+				4C66CC4B2B4DB238004D5FF3 /* SF-Compact-Rounded-Thin.otf */,
+				4C66CC342B4DB238004D5FF3 /* SF-Compact-Rounded-Ultralight.otf */,
+				4C66CC682B4DB238004D5FF3 /* SF-Compact-Text-Black.otf */,
+				4C66CC622B4DB238004D5FF3 /* SF-Compact-Text-BlackItalic.otf */,
+				4C66CC532B4DB238004D5FF3 /* SF-Compact-Text-Bold.otf */,
+				4C66CC282B4DB238004D5FF3 /* SF-Compact-Text-BoldItalic.otf */,
+				4C66CC3C2B4DB238004D5FF3 /* SF-Compact-Text-Heavy.otf */,
+				4C66CC3A2B4DB238004D5FF3 /* SF-Compact-Text-HeavyItalic.otf */,
+				4C66CC2B2B4DB238004D5FF3 /* SF-Compact-Text-Light.otf */,
+				4C66CC292B4DB238004D5FF3 /* SF-Compact-Text-LightItalic.otf */,
+				4C66CC7B2B4DB238004D5FF3 /* SF-Compact-Text-Medium.otf */,
+				4C66CC6A2B4DB238004D5FF3 /* SF-Compact-Text-MediumItalic.otf */,
+				4C66CC3B2B4DB238004D5FF3 /* SF-Compact-Text-Regular.otf */,
+				4C66CC332B4DB238004D5FF3 /* SF-Compact-Text-RegularItalic.otf */,
+				4C66CC4E2B4DB238004D5FF3 /* SF-Compact-Text-Semibold.otf */,
+				4C66CC5C2B4DB238004D5FF3 /* SF-Compact-Text-SemiboldItalic.otf */,
+				4C66CC582B4DB238004D5FF3 /* SF-Compact-Text-Thin.otf */,
+				4C66CC562B4DB238004D5FF3 /* SF-Compact-Text-ThinItalic.otf */,
+				4C66CC2D2B4DB238004D5FF3 /* SF-Compact-Text-Ultralight.otf */,
+				4C66CC2E2B4DB238004D5FF3 /* SF-Compact-Text-UltralightItalic.otf */,
+				4C66CC462B4DB238004D5FF3 /* SF-Compact.ttf */,
+				4C66CC572B4DB238004D5FF3 /* SF-Pro-Display-Black.otf */,
+				4C66CC422B4DB238004D5FF3 /* SF-Pro-Display-BlackItalic.otf */,
+				4C66CC3E2B4DB238004D5FF3 /* SF-Pro-Display-Bold.otf */,
+				4C66CC412B4DB238004D5FF3 /* SF-Pro-Display-BoldItalic.otf */,
+				4C66CC4C2B4DB238004D5FF3 /* SF-Pro-Display-Heavy.otf */,
+				4C66CC782B4DB238004D5FF3 /* SF-Pro-Display-HeavyItalic.otf */,
+				4C66CC4A2B4DB238004D5FF3 /* SF-Pro-Display-Light.otf */,
+				4C66CC442B4DB238004D5FF3 /* SF-Pro-Display-LightItalic.otf */,
+				4C66CC742B4DB238004D5FF3 /* SF-Pro-Display-Medium.otf */,
+				4C66CC672B4DB238004D5FF3 /* SF-Pro-Display-MediumItalic.otf */,
+				4C66CC2C2B4DB238004D5FF3 /* SF-Pro-Display-Regular.otf */,
+				4C66CC5E2B4DB238004D5FF3 /* SF-Pro-Display-RegularItalic.otf */,
+				4C66CC5B2B4DB238004D5FF3 /* SF-Pro-Display-Semibold.otf */,
+				4C66CC722B4DB238004D5FF3 /* SF-Pro-Display-SemiboldItalic.otf */,
+				4C66CC4F2B4DB238004D5FF3 /* SF-Pro-Display-Thin.otf */,
+				4C66CC452B4DB238004D5FF3 /* SF-Pro-Display-ThinItalic.otf */,
+				4C66CC752B4DB238004D5FF3 /* SF-Pro-Display-Ultralight.otf */,
+				4C66CC3D2B4DB238004D5FF3 /* SF-Pro-Display-UltralightItalic.otf */,
+				4C66CC5F2B4DB238004D5FF3 /* SF-Pro-Italic.ttf */,
+				4C66CC472B4DB238004D5FF3 /* SF-Pro-Rounded-Black.otf */,
+				4C66CC3F2B4DB238004D5FF3 /* SF-Pro-Rounded-Bold.otf */,
+				4C66CC772B4DB238004D5FF3 /* SF-Pro-Rounded-Heavy.otf */,
+				4C66CC5D2B4DB238004D5FF3 /* SF-Pro-Rounded-Light.otf */,
+				4C66CC762B4DB238004D5FF3 /* SF-Pro-Rounded-Medium.otf */,
+				4C66CC482B4DB238004D5FF3 /* SF-Pro-Rounded-Regular.otf */,
+				4C66CC4D2B4DB238004D5FF3 /* SF-Pro-Rounded-Semibold.otf */,
+				4C66CC512B4DB238004D5FF3 /* SF-Pro-Rounded-Thin.otf */,
+				4C66CC522B4DB238004D5FF3 /* SF-Pro-Rounded-Ultralight.otf */,
+				4C66CC392B4DB238004D5FF3 /* SF-Pro-Text-Black.otf */,
+				4C66CC382B4DB238004D5FF3 /* SF-Pro-Text-BlackItalic.otf */,
+				4C66CC6B2B4DB238004D5FF3 /* SF-Pro-Text-Bold.otf */,
+				4C66CC372B4DB238004D5FF3 /* SF-Pro-Text-BoldItalic.otf */,
+				4C66CC302B4DB238004D5FF3 /* SF-Pro-Text-Heavy.otf */,
+				4C66CC6D2B4DB238004D5FF3 /* SF-Pro-Text-HeavyItalic.otf */,
+				4C66CC612B4DB238004D5FF3 /* SF-Pro-Text-Light.otf */,
+				4C66CC402B4DB238004D5FF3 /* SF-Pro-Text-LightItalic.otf */,
+				4C66CC662B4DB238004D5FF3 /* SF-Pro-Text-Medium.otf */,
+				4C66CC7A2B4DB238004D5FF3 /* SF-Pro-Text-MediumItalic.otf */,
+				4C66CC5A2B4DB238004D5FF3 /* SF-Pro-Text-Regular.otf */,
+				4C66CC642B4DB238004D5FF3 /* SF-Pro-Text-RegularItalic.otf */,
+				4C66CC502B4DB238004D5FF3 /* SF-Pro-Text-Semibold.otf */,
+				4C66CC2A2B4DB238004D5FF3 /* SF-Pro-Text-SemiboldItalic.otf */,
+				4C66CC492B4DB238004D5FF3 /* SF-Pro-Text-Thin.otf */,
+				4C66CC272B4DB238004D5FF3 /* SF-Pro-Text-ThinItalic.otf */,
+				4C66CC732B4DB238004D5FF3 /* SF-Pro-Text-Ultralight.otf */,
+				4C66CC432B4DB238004D5FF3 /* SF-Pro-Text-UltralightItalic.otf */,
+				4C66CC6F2B4DB238004D5FF3 /* SF-Pro.ttf */,
+			);
+			path = CustomFonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
