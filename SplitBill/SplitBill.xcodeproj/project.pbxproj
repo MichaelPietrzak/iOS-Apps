@@ -13,6 +13,8 @@
 		4C66CC1A2B4DA2D5004D5FF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C66CC182B4DA2D5004D5FF3 /* Main.storyboard */; };
 		4C66CC1C2B4DA2D6004D5FF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C66CC1B2B4DA2D6004D5FF3 /* Assets.xcassets */; };
 		4C66CC1F2B4DA2D6004D5FF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C66CC1D2B4DA2D6004D5FF3 /* LaunchScreen.storyboard */; };
+		4C6ADD0E2B4E96F20087971C /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C66CC3F2B4DB238004D5FF3 /* SF-Pro-Rounded-Bold.otf */; };
+		4C6ADD0F2B4E96F90087971C /* SF-Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C66CC6F2B4DB238004D5FF3 /* SF-Pro.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -304,8 +306,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C66CC1F2B4DA2D6004D5FF3 /* LaunchScreen.storyboard in Resources */,
+				4C6ADD0E2B4E96F20087971C /* SF-Pro-Rounded-Bold.otf in Resources */,
 				4C66CC1C2B4DA2D6004D5FF3 /* Assets.xcassets in Resources */,
 				4C66CC1A2B4DA2D5004D5FF3 /* Main.storyboard in Resources */,
+				4C6ADD0F2B4E96F90087971C /* SF-Pro.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
