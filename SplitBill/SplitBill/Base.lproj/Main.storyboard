@@ -54,16 +54,25 @@
                                                         <rect key="frame" x="0.0" y="5.3333333333333428" width="117.66666666666667" height="34.333333333333336"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="0%"/>
+                                                        <connections>
+                                                            <action selector="tipChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uab-7t-AhY"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5R-l4-Jwk">
                                                         <rect key="frame" x="117.66666666666666" y="5.3333333333333428" width="117.66666666666666" height="34.333333333333336"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="10%"/>
+                                                        <connections>
+                                                            <action selector="tipChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hkA-BH-ygG"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1HF-fJ-s7v">
                                                         <rect key="frame" x="235.33333333333334" y="5.3333333333333428" width="117.66666666666666" height="34.333333333333336"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="20%"/>
+                                                        <connections>
+                                                            <action selector="tipChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fA1-hO-H7R"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -92,6 +101,9 @@
                                                     </label>
                                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="PCN-WD-ajB">
                                                         <rect key="frame" x="176.66666666666663" y="6.6666666666666856" width="176.33333333333337" height="32"/>
+                                                        <connections>
+                                                            <action selector="stepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="zBh-Ng-2wK"/>
+                                                        </connections>
                                                     </stepper>
                                                 </subviews>
                                                 <constraints>
@@ -111,6 +123,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Calculate"/>
+                                        <connections>
+                                            <action selector="calculatePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zm3-3K-PNC"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -133,6 +148,7 @@
                         <outlet property="TwentyPctBtn" destination="1HF-fJ-s7v" id="ix1-8e-4rP"/>
                         <outlet property="billTextField" destination="rc9-mE-Ek6" id="o8p-Qx-8rw"/>
                         <outlet property="billTotalLbl" destination="8WD-js-AL8" id="nGr-qa-1ow"/>
+                        <outlet property="calculateBtn" destination="O2V-HC-jFW" id="uZu-kx-MEZ"/>
                         <outlet property="selectTipLbl" destination="IBZ-G0-PqZ" id="RaJ-F4-2xO"/>
                         <outlet property="splitLbl" destination="wgT-FI-110" id="SIE-fq-mtM"/>
                         <outlet property="splitNumberLbl" destination="lup-QI-rns" id="L9u-b8-GV3"/>

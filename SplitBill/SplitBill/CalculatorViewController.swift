@@ -17,9 +17,21 @@ class CalculatorViewController: UIViewController {
     @IBOutlet weak var TwentyPctBtn: UIButton!
     @IBOutlet weak var splitLbl: UILabel!
     @IBOutlet weak var splitNumberLbl: UILabel!
+    @IBOutlet weak var calculateBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBAction func tipChanged(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func stepperValueChanged(_ sender: UIStepper) {
+        
+    }
+    
+    @IBAction func calculatePressed(_ sender: UIButton) {
+        
+    }
 }
-
