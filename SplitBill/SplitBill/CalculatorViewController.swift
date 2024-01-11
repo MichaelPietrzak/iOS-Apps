@@ -9,11 +9,17 @@ import UIKit
 
 class CalculatorViewController: UIViewController {
 
+    @IBOutlet weak var billTotalLbl: UILabel!
+    @IBOutlet weak var billTextField: UITextField!
+    @IBOutlet weak var selectTipLbl: UILabel!
+    @IBOutlet weak var zeroPctBtn: UIButton!
+    @IBOutlet weak var tenPctBtn: UIButton!
+    @IBOutlet weak var TwentyPctBtn: UIButton!
+    @IBOutlet weak var splitLbl: UILabel!
+    @IBOutlet weak var splitNumberLbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
 

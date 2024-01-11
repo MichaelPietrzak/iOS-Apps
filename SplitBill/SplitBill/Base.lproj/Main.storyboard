@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RWo-3V-SSD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
@@ -129,6 +129,16 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Oc4-DY-13E" secondAttribute="trailing" constant="20" id="ucZ-ZC-Kfb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="TwentyPctBtn" destination="1HF-fJ-s7v" id="ix1-8e-4rP"/>
+                        <outlet property="billTextField" destination="rc9-mE-Ek6" id="o8p-Qx-8rw"/>
+                        <outlet property="billTotalLbl" destination="8WD-js-AL8" id="nGr-qa-1ow"/>
+                        <outlet property="selectTipLbl" destination="IBZ-G0-PqZ" id="RaJ-F4-2xO"/>
+                        <outlet property="splitLbl" destination="wgT-FI-110" id="SIE-fq-mtM"/>
+                        <outlet property="splitNumberLbl" destination="lup-QI-rns" id="L9u-b8-GV3"/>
+                        <outlet property="tenPctBtn" destination="j5R-l4-Jwk" id="Rs7-QN-Xl3"/>
+                        <outlet property="zeroPctBtn" destination="qO8-Jc-EHH" id="C5L-qR-NNS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
