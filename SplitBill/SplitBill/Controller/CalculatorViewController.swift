@@ -21,6 +21,7 @@ class CalculatorViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     
     @IBAction func tipChanged(_ sender: UIButton) {

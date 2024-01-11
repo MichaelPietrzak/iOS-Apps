@@ -98,6 +98,7 @@
 		4C66CC1A2B4DA2D5004D5FF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C66CC182B4DA2D5004D5FF3 /* Main.storyboard */; };
 		4C66CC1C2B4DA2D6004D5FF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C66CC1B2B4DA2D6004D5FF3 /* Assets.xcassets */; };
 		4C66CC1F2B4DA2D6004D5FF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C66CC1D2B4DA2D6004D5FF3 /* LaunchScreen.storyboard */; };
+		4CD608B02B50B35B001BEA52 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD608AF2B50B35B001BEA52 /* Constants.swift */; };
 		4CD819FF2B4EDC9C00CB2B83 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD819FE2B4EDC9C00CB2B83 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -195,6 +196,7 @@
 		4C66CC1B2B4DA2D6004D5FF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C66CC1E2B4DA2D6004D5FF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C66CC202B4DA2D6004D5FF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CD608AF2B50B35B001BEA52 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4CD819FE2B4EDC9C00CB2B83 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -344,6 +346,7 @@
 		4C66CC112B4DA2D5004D5FF3 /* SplitBill */ = {
 			isa = PBXGroup;
 			children = (
+				4CD608AE2B50B322001BEA52 /* Utilities */,
 				4C07C2652B50AA2300B35100 /* CustomFonts */,
 				4C34BA2A2B50212E00F60A9E /* Model */,
 				4C34BA2B2B50213400F60A9E /* View */,
@@ -355,6 +358,14 @@
 				4C66CC202B4DA2D6004D5FF3 /* Info.plist */,
 			);
 			path = SplitBill;
+			sourceTree = "<group>";
+		};
+		4CD608AE2B50B322001BEA52 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4CD608AF2B50B35B001BEA52 /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -513,6 +524,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CD608B02B50B35B001BEA52 /* Constants.swift in Sources */,
 				4C66CC172B4DA2D5004D5FF3 /* CalculatorViewController.swift in Sources */,
 				4C66CC132B4DA2D5004D5FF3 /* AppDelegate.swift in Sources */,
 				4C66CC152B4DA2D5004D5FF3 /* SceneDelegate.swift in Sources */,
