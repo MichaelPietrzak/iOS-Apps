@@ -9,13 +9,18 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    @IBOutlet weak var totalLbl: UILabel!
+    @IBOutlet weak var totalValueLbl: UILabel!
+    @IBOutlet weak var settingsLbl: UILabel!
+    @IBOutlet weak var recalculateBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func recalculatePressed(_ sender: UIButton) {
+        
+    }
     /*
     // MARK: - Navigation
 

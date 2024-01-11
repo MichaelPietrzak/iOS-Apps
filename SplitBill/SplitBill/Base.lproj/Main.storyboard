@@ -234,6 +234,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Recalculate"/>
+                                <connections>
+                                    <action selector="recalculatePressed:" destination="RWo-3V-SSD" eventType="touchUpInside" id="SwD-8r-Tg8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LSM-Vx-sho"/>
@@ -248,6 +251,12 @@
                             <constraint firstItem="LSM-Vx-sho" firstAttribute="trailing" secondItem="s6j-vK-sux" secondAttribute="trailing" constant="20" id="qap-Kc-WPQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="recalculateBtn" destination="s6j-vK-sux" id="LvW-nP-lCV"/>
+                        <outlet property="settingsLbl" destination="MSY-ky-Kf0" id="eax-eV-U7X"/>
+                        <outlet property="totalLbl" destination="dGV-k7-AJ0" id="KPF-ML-wCe"/>
+                        <outlet property="totalValueLbl" destination="yNa-yE-1NS" id="zRv-KI-MlB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P0b-Ht-Mls" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
