@@ -26,7 +26,26 @@ class CalculatorViewController: UIViewController {
     }
     
     @IBAction func tipChanged(_ sender: UIButton) {
+        let userSelect = sender.titleLabel?.text
         
+        print(userSelect)
+        
+        switch userSelect {
+        case "0%":
+            zeroPctBtn.isSelected = true
+            tenPctBtn.isSelected = false
+            TwentyPctBtn.isSelected = false
+        case "10%":
+            zeroPctBtn.isSelected = false
+            tenPctBtn.isSelected = true
+            TwentyPctBtn.isSelected = false
+        case "20%":
+            zeroPctBtn.isSelected = false
+            tenPctBtn.isSelected = false
+            TwentyPctBtn.isSelected = true
+        default:
+            print("error!")
+        }
     }
     
     @IBAction func stepperValueChanged(_ sender: UIStepper) {
