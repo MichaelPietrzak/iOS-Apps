@@ -21,7 +21,7 @@ class CalculatorViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        updateUI()
     }
     
     @IBAction func tipChanged(_ sender: UIButton) {
@@ -33,6 +33,26 @@ class CalculatorViewController: UIViewController {
     }
     
     @IBAction func calculatePressed(_ sender: UIButton) {
+        
+    }
+    
+    func updateUI() {
+        
+        view.backgroundColor = Colors.lightGray
+        
+        billTotalLbl.textColor  = Colors.black
+        billTextField.textColor = Colors.darkBlue
+        selectTipLbl.textColor  = Colors.black
+        splitLbl.textColor      = Colors.black
+        splitNumberLbl.textColor = Colors.darkBlue
+        
+        billTotalLbl.font   = UIFont(name: Fonts.sfProRoundedBold, size: 20)
+        selectTipLbl.font   = UIFont(name: Fonts.sfProRoundedBold, size: 20)
+        splitLbl.font       = UIFont(name: Fonts.sfProRoundedBold, size: 20)
+        billTextField.font  = UIFont(name: Fonts.sfProRoundedBold, size: 17)
+        splitNumberLbl.font = UIFont(name: Fonts.sfProRoundedBold, size: 17)
+        
+        billTextField.layer.cornerRadius = 5
         
     }
 }
