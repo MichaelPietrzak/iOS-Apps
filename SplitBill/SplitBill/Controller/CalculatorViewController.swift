@@ -18,6 +18,7 @@ class CalculatorViewController: UIViewController {
     @IBOutlet weak var splitLbl: UILabel!
     @IBOutlet weak var splitNumberLbl: UILabel!
     @IBOutlet weak var calculateBtn: UIButton!
+    @IBOutlet weak var blankView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +39,8 @@ class CalculatorViewController: UIViewController {
     
     func updateUI() {
         
-        view.backgroundColor = Colors.lightGray
+        view.backgroundColor       = Colors.lightGray
+        blankView.backgroundColor  = Colors.lightGray
         
         billTotalLbl.textColor       = Colors.black
         billTextField.textColor      = Colors.darkBlue
