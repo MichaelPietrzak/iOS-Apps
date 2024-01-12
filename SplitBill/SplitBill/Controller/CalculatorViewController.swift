@@ -64,7 +64,7 @@ class CalculatorViewController: UIViewController {
         billTextField.layer.cornerRadius = 5
         calculateBtn.layer.cornerRadius  = 5
         
-        
-        
+        billTextField.borderStyle = .none
+        billTextField.placeholder = "e.g. 45.67"
     }
 }

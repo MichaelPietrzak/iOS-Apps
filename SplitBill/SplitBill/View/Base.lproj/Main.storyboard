@@ -136,6 +136,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <color key="backgroundColor" red="0.96470588235294119" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="76m-bh-B8v" firstAttribute="leading" secondItem="Oc4-DY-13E" secondAttribute="leading" id="L2W-kV-Z9x"/>
                                     <constraint firstAttribute="trailing" secondItem="76m-bh-B8v" secondAttribute="trailing" id="y5x-bs-nGC"/>
