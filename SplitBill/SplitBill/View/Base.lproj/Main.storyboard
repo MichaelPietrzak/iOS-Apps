@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RWo-3V-SSD">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
@@ -136,7 +136,6 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.96470588235294119" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="76m-bh-B8v" firstAttribute="leading" secondItem="Oc4-DY-13E" secondAttribute="leading" id="L2W-kV-Z9x"/>
                                     <constraint firstAttribute="trailing" secondItem="76m-bh-B8v" secondAttribute="trailing" id="y5x-bs-nGC"/>
@@ -182,8 +181,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lU5-18-JBv">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="352"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AKA-EY-lcR">
-                                                <rect key="frame" x="114.66666666666666" y="155.66666666666666" width="123.66666666666666" height="40.666666666666657"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="AKA-EY-lcR">
+                                                <rect key="frame" x="114.66666666666666" y="153.33333333333334" width="123.66666666666666" height="45.666666666666657"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total per person" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGV-k7-AJ0">
                                                         <rect key="frame" x="0.0" y="0.0" width="123.66666666666667" height="20.333333333333332"/>
@@ -192,7 +191,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="56.32" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNa-yE-1NS">
-                                                        <rect key="frame" x="39.666666666666686" y="20.333333333333343" width="44.333333333333343" height="20.333333333333329"/>
+                                                        <rect key="frame" x="39.666666666666686" y="25.333333333333314" width="44.333333333333343" height="20.333333333333329"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -200,7 +199,6 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="AKA-EY-lcR" firstAttribute="centerX" secondItem="lU5-18-JBv" secondAttribute="centerX" id="fJS-hV-9cv"/>
                                             <constraint firstItem="AKA-EY-lcR" firstAttribute="centerY" secondItem="lU5-18-JBv" secondAttribute="centerY" id="o9r-4q-cro"/>
@@ -216,7 +214,6 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="MSY-ky-Kf0" secondAttribute="trailing" id="Zov-EL-y6v"/>
                                             <constraint firstItem="MSY-ky-Kf0" firstAttribute="top" secondItem="Sbk-b4-X2n" secondAttribute="top" constant="50" id="mon-r7-xCv"/>
@@ -242,7 +239,6 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Recalculate"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Recalculate"/>
                                 <connections>
                                     <action selector="recalculatePressed:" destination="RWo-3V-SSD" eventType="touchUpInside" id="SwD-8r-Tg8"/>
                                 </connections>

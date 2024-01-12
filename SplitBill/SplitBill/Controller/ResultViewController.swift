@@ -16,11 +16,31 @@ class ResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateUI()
     }
     
     @IBAction func recalculatePressed(_ sender: UIButton) {
         
     }
+    
+    func updateUI() {
+        
+        view.backgroundColor = Colors.lightGray
+        
+        totalLbl.textColor             = Colors.black
+        totalValueLbl.textColor        = Colors.darkBlue
+        settingsLbl.textColor          = Colors.black
+        recalculateBtn.tintColor       = Colors.lightGray
+        recalculateBtn.backgroundColor = Colors.darkBlue
+        
+        totalLbl.font                   = UIFont(name: Fonts.sfProRoundedBold, size: 20)
+        totalValueLbl.font              = UIFont(name: Fonts.sfProRoundedBold, size: 35)
+        settingsLbl.font                = UIFont(name: Fonts.sfProRoundedBold, size: 20)
+        recalculateBtn.titleLabel?.font = UIFont(name: Fonts.sfProRoundedBold, size: 20)
+        
+        recalculateBtn.layer.cornerRadius = 5
+    }
+    
     /*
     // MARK: - Navigation
 
