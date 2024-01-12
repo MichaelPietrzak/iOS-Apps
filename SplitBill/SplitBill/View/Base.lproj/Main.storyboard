@@ -59,28 +59,25 @@
                                                 <rect key="frame" x="0.0" y="45" width="353" height="45"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qO8-Jc-EHH">
-                                                        <rect key="frame" x="0.0" y="5.3333333333333428" width="117.66666666666667" height="34.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="7.6666666666666856" width="117.66666666666667" height="30"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="0%"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="0%"/>
                                                         <connections>
                                                             <action selector="tipChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uab-7t-AhY"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5R-l4-Jwk">
-                                                        <rect key="frame" x="117.66666666666666" y="5.3333333333333428" width="117.66666666666666" height="34.333333333333336"/>
+                                                        <rect key="frame" x="117.66666666666666" y="7.6666666666666856" width="117.66666666666666" height="30"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="10%"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="10%"/>
                                                         <connections>
                                                             <action selector="tipChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hkA-BH-ygG"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1HF-fJ-s7v">
-                                                        <rect key="frame" x="235.33333333333334" y="5.3333333333333428" width="117.66666666666666" height="34.333333333333336"/>
+                                                        <rect key="frame" x="235.33333333333334" y="7.6666666666666856" width="117.66666666666666" height="30"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="20%"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="20%"/>
                                                         <connections>
                                                             <action selector="tipChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fA1-hO-H7R"/>
                                                         </connections>
@@ -134,7 +131,6 @@
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Calculate"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Calculate"/>
                                         <connections>
                                             <action selector="calculatePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zm3-3K-PNC"/>
                                         </connections>
