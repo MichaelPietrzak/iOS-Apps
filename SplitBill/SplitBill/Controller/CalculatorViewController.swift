@@ -30,22 +30,11 @@ class CalculatorViewController: UIViewController {
         
         print(userSelect)
         
-        switch userSelect {
-        case "0%":
-            zeroPctBtn.isSelected = true
-            tenPctBtn.isSelected = false
-            TwentyPctBtn.isSelected = false
-        case "10%":
-            zeroPctBtn.isSelected = false
-            tenPctBtn.isSelected = true
-            TwentyPctBtn.isSelected = false
-        case "20%":
-            zeroPctBtn.isSelected = false
-            tenPctBtn.isSelected = false
-            TwentyPctBtn.isSelected = true
-        default:
-            print("error!")
-        }
+        zeroPctBtn.isSelected = false
+        tenPctBtn.isSelected = false
+        TwentyPctBtn.isSelected = false
+        
+        sender.isSelected = true
     }
     
     @IBAction func stepperValueChanged(_ sender: UIStepper) {
