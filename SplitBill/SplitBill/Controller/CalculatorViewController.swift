@@ -20,15 +20,16 @@ class CalculatorViewController: UIViewController {
     @IBOutlet weak var calculateBtn: UIButton!
     @IBOutlet weak var blankView: UIView!
     
+    var tipAmount = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
     }
     
     @IBAction func tipChanged(_ sender: UIButton) {
-        let userSelect = sender.titleLabel?.text
-        
-        print(userSelect)
+        let userSelect = sender.titleLabel?.text ?? "No tip"
+        tipAmount = userSelect
         
         zeroPctBtn.isSelected = false
         tenPctBtn.isSelected = false
@@ -42,7 +43,11 @@ class CalculatorViewController: UIViewController {
     }
     
     @IBAction func calculatePressed(_ sender: UIButton) {
-        
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .percent
+        if let decimal = formatter.number(from: tipAmount) {
+            print(decimal)
+        }
     }
     
     func updateUI() {
