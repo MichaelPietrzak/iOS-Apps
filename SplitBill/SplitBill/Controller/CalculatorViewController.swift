@@ -40,6 +40,8 @@ class CalculatorViewController: UIViewController {
     
     @IBAction func stepperValueChanged(_ sender: UIStepper) {
         
+        let splitValue = String(format: "%.f", sender.value)
+        splitNumberLbl.text = splitValue
     }
     
     @IBAction func calculatePressed(_ sender: UIButton) {
