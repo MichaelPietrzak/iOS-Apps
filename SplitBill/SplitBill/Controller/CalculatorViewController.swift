@@ -21,6 +21,7 @@ class CalculatorViewController: UIViewController {
     @IBOutlet weak var blankView: UIView!
     
     var tipAmount = ""
+    var splitValue = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +29,7 @@ class CalculatorViewController: UIViewController {
     }
     
     @IBAction func tipChanged(_ sender: UIButton) {
-        let userSelect = sender.titleLabel?.text ?? "No tip"
-        tipAmount = userSelect
+        tipAmount = sender.titleLabel?.text ?? "No tip"
         
         zeroPctBtn.isSelected = false
         tenPctBtn.isSelected = false
@@ -40,7 +40,7 @@ class CalculatorViewController: UIViewController {
     
     @IBAction func stepperValueChanged(_ sender: UIStepper) {
         
-        let splitValue = String(format: "%.f", sender.value)
+        splitValue = String(format: "%.f", sender.value)
         splitNumberLbl.text = splitValue
     }
     
@@ -50,6 +50,8 @@ class CalculatorViewController: UIViewController {
         if let decimal = formatter.number(from: tipAmount) {
             print(decimal)
         }
+        
+        print(splitValue)
     }
     
     func updateUI() {
