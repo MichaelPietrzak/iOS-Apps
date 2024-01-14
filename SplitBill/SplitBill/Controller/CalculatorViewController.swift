@@ -41,18 +41,26 @@ class CalculatorViewController: UIViewController {
     }
     
     @IBAction func stepperValueChanged(_ sender: UIStepper) {
-        
         splitValue = String(format: "%.f", sender.value)
         splitNumberLbl.text = splitValue
     }
     
     @IBAction func calculatePressed(_ sender: UIButton) {
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .percent
-        let decimalValue = formatter.number(from: tipAmount) ?? 0.0
+        
+        let tipValue = (tipAmount as NSString).doubleValue / 100
         
         let userInput = billTextField.text ?? "Non entered"
-        print(userInput)
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.decimalSeparator = ","
+        let decimalFormat = formatter.number(from: userInput) ?? 0.0
+        let inputValue = Double(decimalFormat)
+        
+        let split = (splitValue as NSString).doubleValue
+
+        let totalToPay = ((inputValue * tipValue) + inputValue) / split
+        let twoDecimalPlaces = String(format: "%.2f", totalToPay)
+        print(twoDecimalPlaces)
     }
     
     func updateUI() {
