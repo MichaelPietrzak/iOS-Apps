@@ -36,6 +36,8 @@ class CalculatorViewController: UIViewController {
         TwentyPctBtn.isSelected = false
         
         sender.isSelected = true
+        
+        billTextField.endEditing(true)
     }
     
     @IBAction func stepperValueChanged(_ sender: UIStepper) {
@@ -47,11 +49,10 @@ class CalculatorViewController: UIViewController {
     @IBAction func calculatePressed(_ sender: UIButton) {
         let formatter = NumberFormatter()
         formatter.numberStyle = .percent
-        if let decimal = formatter.number(from: tipAmount) {
-            print(decimal)
-        }
+        let decimalValue = formatter.number(from: tipAmount) ?? 0.0
         
-        print(splitValue)
+        let userInput = billTextField.text ?? "Non entered"
+        print(userInput)
     }
     
     func updateUI() {
