@@ -54,7 +54,7 @@ class CalculatorViewController: UIViewController {
         formatter.numberStyle = .decimal
         formatter.decimalSeparator = ","
         let decimalFormat = formatter.number(from: userInput) ?? 0.0
-        let inputValue = Double(decimalFormat)
+        let inputValue = Double(truncating: decimalFormat)
         
         let split = (splitValue as NSString).doubleValue
 
