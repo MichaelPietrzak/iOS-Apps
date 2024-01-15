@@ -161,7 +161,7 @@
                         <outlet property="splitNumberLbl" destination="lup-QI-rns" id="L9u-b8-GV3"/>
                         <outlet property="tenPctBtn" destination="j5R-l4-Jwk" id="Rs7-QN-Xl3"/>
                         <outlet property="zeroPctBtn" destination="qO8-Jc-EHH" id="C5L-qR-NNS"/>
-                        <segue destination="RWo-3V-SSD" kind="presentation" identifier="ResultView" id="Ukn-Xh-xDk"/>
+                        <segue destination="RWo-3V-SSD" kind="presentation" identifier="goToResult" id="Ukn-Xh-xDk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -61,6 +61,14 @@ class CalculatorViewController: UIViewController {
         let totalToPay = ((inputValue * tipValue) + inputValue) / split
         let twoDecimalPlaces = String(format: "%.2f", totalToPay)
         print(twoDecimalPlaces)
+        
+        self.performSegue(withIdentifier: "goToResult", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToResult" {
+            let destinationVC = segue.destination as! ResultViewController
+        }
     }
     
     func updateUI() {
