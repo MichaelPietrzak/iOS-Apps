@@ -22,6 +22,9 @@ class CalculatorViewController: UIViewController {
     
     var tipAmount = ""
     var splitValue = ""
+    var calcResult = ""
+    var split: Double = 0.0
+    var tipPercent: Double = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +50,7 @@ class CalculatorViewController: UIViewController {
     
     @IBAction func calculatePressed(_ sender: UIButton) {
         
-        let tipValue = (tipAmount as NSString).doubleValue / 100
+        tipPercent = (tipAmount as NSString).doubleValue / 100
         
         let userInput = billTextField.text ?? "Non entered"
         let formatter = NumberFormatter()
@@ -56,11 +59,10 @@ class CalculatorViewController: UIViewController {
         let decimalFormat = formatter.number(from: userInput) ?? 0.0
         let inputValue = Double(truncating: decimalFormat)
         
-        let split = (splitValue as NSString).doubleValue
+        split = (splitValue as NSString).doubleValue
 
-        let totalToPay = ((inputValue * tipValue) + inputValue) / split
-        let twoDecimalPlaces = String(format: "%.2f", totalToPay)
-        print(twoDecimalPlaces)
+        let totalToPay = ((inputValue * tipPercent) + inputValue) / split
+        calcResult = String(format: "%.2f", totalToPay)
         
         self.performSegue(withIdentifier: "goToResult", sender: self)
     }
@@ -68,6 +70,9 @@ class CalculatorViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToResult" {
             let destinationVC = segue.destination as! ResultViewController
+            destinationVC.calcResult = calcResult
+            destinationVC.numOfPeople = split
+            destinationVC.tipPercentage = tipPercent
         }
     }
     

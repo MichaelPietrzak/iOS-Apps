@@ -14,6 +14,10 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var settingsLbl: UILabel!
     @IBOutlet weak var recalculateBtn: UIButton!
     
+    var calcResult: String?
+    var numOfPeople: Double?
+    var tipPercentage: Double?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
@@ -39,5 +43,8 @@ class ResultViewController: UIViewController {
         recalculateBtn.titleLabel?.font = UIFont(name: Fonts.sfProRoundedBold, size: 20)
         
         recalculateBtn.layer.cornerRadius = 5
+        
+        totalValueLbl.text = calcResult
+        settingsLbl.text = "Split between \(Int(numOfPeople!)) people, with \(Int(tipPercentage! * 100))% tip."
     }
 }
