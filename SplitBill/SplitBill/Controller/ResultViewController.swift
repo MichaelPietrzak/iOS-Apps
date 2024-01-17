@@ -21,10 +21,16 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         layoutUI()
+        updateUI()
     }
     
     @IBAction func recalculatePressed(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    func updateUI() {
+        totalValueLbl.text = calcResult
+        settingsLbl.text = "Split between \(Int(numOfPeople!)) people, with \(Int(tipPercentage! * 100))% tip."
     }
     
     func layoutUI() {
@@ -42,8 +48,5 @@ class ResultViewController: UIViewController {
         recalculateBtn.titleLabel?.font = UIFont(name: Fonts.sfProRoundedBold, size: 20)
         
         recalculateBtn.layer.cornerRadius = 5
-        
-        totalValueLbl.text = calcResult
-        settingsLbl.text = "Split between \(Int(numOfPeople!)) people, with \(Int(tipPercentage! * 100))% tip."
     }
 }
