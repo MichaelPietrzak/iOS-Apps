@@ -28,7 +28,7 @@ class CalculatorViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateUI()
+        layoutUI()
     }
     
     @IBAction func tipChanged(_ sender: UIButton) {
@@ -76,8 +76,7 @@ class CalculatorViewController: UIViewController {
         }
     }
     
-    func updateUI() {
-        
+    func layoutUI() {
         view.backgroundColor       = Colors.lightGray
         blankView.backgroundColor  = Colors.lightGray
         
@@ -102,10 +101,11 @@ class CalculatorViewController: UIViewController {
         TwentyPctBtn.titleLabel?.font = UIFont(name: Fonts.sfProRoundedBold, size: 17)
         calculateBtn.titleLabel?.font = UIFont(name: Fonts.sfProRoundedBold, size: 20)
         
-        billTextField.layer.cornerRadius = 5
         calculateBtn.layer.cornerRadius  = 5
+        billTextField.layer.cornerRadius = 5
         
         billTextField.borderStyle = .none
+        
         billTextField.attributedPlaceholder = NSAttributedString(
             string: "e.g. 45.67",
             attributes: [NSAttributedString.Key.foregroundColor: Colors.darkGray]

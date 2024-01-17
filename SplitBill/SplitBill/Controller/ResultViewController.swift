@@ -20,15 +20,14 @@ class ResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateUI()
+        layoutUI()
     }
     
     @IBAction func recalculatePressed(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
     
-    func updateUI() {
-        
+    func layoutUI() {
         view.backgroundColor = Colors.lightGray
         
         totalLbl.textColor             = Colors.black
