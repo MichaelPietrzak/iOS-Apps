@@ -17,13 +17,13 @@ class CalculatorViewController: UIViewController {
     @IBOutlet weak var TwentyPctBtn: UIButton!
     @IBOutlet weak var splitLbl: UILabel!
     @IBOutlet weak var splitNumberLbl: UILabel!
+    @IBOutlet weak var splitStepperBtn: UIStepper!
     @IBOutlet weak var calculateBtn: UIButton!
     @IBOutlet weak var blankView: UIView!
     
+    var calculatorModel = CalculatorModel()
+    
     var tipAmount = ""
-    var splitValue = ""
-    var calcResult = ""
-    var split: Double = 0.0
     var tipPercent: Double = 0.0
     
     override func viewDidLoad() {
@@ -32,8 +32,8 @@ class CalculatorViewController: UIViewController {
     }
     
     @IBAction func tipChanged(_ sender: UIButton) {
-        tipAmount = sender.titleLabel?.text ?? "No tip"
-        
+        tipAmount = sender.titleLabel?.text ?? "Error"
+        print("TipAmount: \(tipAmount)")
         zeroPctBtn.isSelected = false
         tenPctBtn.isSelected = false
         TwentyPctBtn.isSelected = false
@@ -44,35 +44,34 @@ class CalculatorViewController: UIViewController {
     }
     
     @IBAction func stepperValueChanged(_ sender: UIStepper) {
-        splitValue = String(format: "%.f", sender.value)
-        splitNumberLbl.text = splitValue
+        splitNumberLbl.text = String(format: "%.f", sender.value)
     }
     
     @IBAction func calculatePressed(_ sender: UIButton) {
         
         tipPercent = (tipAmount as NSString).doubleValue / 100
+        print("Tip: \(tipPercent)")
         
-        let userInput = billTextField.text ?? "Non entered"
+        let userInput = billTextField.text ?? "Error"
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal
         formatter.decimalSeparator = ","
         let decimalFormat = formatter.number(from: userInput) ?? 0.0
         let inputValue = Double(truncating: decimalFormat)
+        print("User value: \(inputValue)")
         
-        split = (splitValue as NSString).doubleValue
-
-        let totalToPay = ((inputValue * tipPercent) + inputValue) / split
-        calcResult = String(format: "%.2f", totalToPay)
+        let split = splitStepperBtn.value
         
+        calculatorModel.calculateBill(value: inputValue, split: split, tip: tipPercent)
         self.performSegue(withIdentifier: "goToResult", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToResult" {
             let destinationVC = segue.destination as! ResultViewController
-            destinationVC.calcResult = calcResult
-            destinationVC.numOfPeople = split
-            destinationVC.tipPercentage = tipPercent
+            destinationVC.calcResult = calculatorModel.getValue()
+            destinationVC.numOfPeople = calculatorModel.getSplit()
+            destinationVC.tipPercentage = calculatorModel.getTip()
         }
     }
     

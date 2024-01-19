@@ -15,8 +15,8 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var recalculateBtn: UIButton!
     
     var calcResult: String?
-    var numOfPeople: Double?
-    var tipPercentage: Double?
+    var numOfPeople: String?
+    var tipPercentage: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +30,7 @@ class ResultViewController: UIViewController {
     
     func updateUI() {
         totalValueLbl.text = calcResult
-        settingsLbl.text = "Split between \(Int(numOfPeople!)) people, with \(Int(tipPercentage! * 100))% tip."
+        settingsLbl.text = "Split between \(numOfPeople!) people, with \(tipPercentage!)% tip."
     }
     
     func layoutUI() {
