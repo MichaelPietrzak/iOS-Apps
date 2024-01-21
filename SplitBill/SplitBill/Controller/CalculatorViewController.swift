@@ -28,17 +28,17 @@ class CalculatorViewController: UIViewController {
         layoutUI()
     }
     
+    // TODO: needs View Life Cycle implementation for emptying data after press recalculatePressed
+    
     @IBAction func tipChanged(_ sender: UIButton) {
         let tipSelect = sender.titleLabel?.text
         calculatorModel.getTipSelect(tipSelect!)
 
+        billTextField.endEditing(true)
         zeroPctBtn.isSelected = false
         tenPctBtn.isSelected = false
         TwentyPctBtn.isSelected = false
-        
         sender.isSelected = true
-        
-        billTextField.endEditing(true)
     }
     
     @IBAction func stepperValueChanged(_ sender: UIStepper) {
