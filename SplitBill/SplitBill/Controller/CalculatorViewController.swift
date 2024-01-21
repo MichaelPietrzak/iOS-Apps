@@ -23,17 +23,15 @@ class CalculatorViewController: UIViewController {
     
     var calculatorModel = CalculatorModel()
     
-    var tipAmount = ""
-    var tipPercent: Double = 0.0
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         layoutUI()
     }
     
     @IBAction func tipChanged(_ sender: UIButton) {
-        tipAmount = sender.titleLabel?.text ?? "Error"
-        print("TipAmount: \(tipAmount)")
+        let tipSelect = sender.titleLabel?.text
+        calculatorModel.getTipSelect(tipSelect!)
+
         zeroPctBtn.isSelected = false
         tenPctBtn.isSelected = false
         TwentyPctBtn.isSelected = false
@@ -48,21 +46,13 @@ class CalculatorViewController: UIViewController {
     }
     
     @IBAction func calculatePressed(_ sender: UIButton) {
-        
-        tipPercent = (tipAmount as NSString).doubleValue / 100
-        print("Tip: \(tipPercent)")
-        
         let userInput = billTextField.text ?? "Error"
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .decimal
-        formatter.decimalSeparator = ","
-        let decimalFormat = formatter.number(from: userInput) ?? 0.0
-        let inputValue = Double(truncating: decimalFormat)
-        print("User value: \(inputValue)")
         
+        let inputValue = calculatorModel.formatInputTextField(userInput)
         let split = splitStepperBtn.value
+        let tip = calculatorModel.tipDecimal
         
-        calculatorModel.calculateBill(value: inputValue, split: split, tip: tipPercent)
+        calculatorModel.calculateBill(value: inputValue, split: split, tip: tip)
         self.performSegue(withIdentifier: "goToResult", sender: self)
     }
     
