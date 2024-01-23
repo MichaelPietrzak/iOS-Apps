@@ -14,7 +14,7 @@ Simple bill splitting, tip calculating app.
 
 <h3>Illustrations</h3
 
-![Alt text](splitBill1.png) ![Alt text](splitBill2.png)
+![Alt text](/Users/michael/Desktop/iOS-Apps/README_images/splitBill1.png) ![Alt text](/Users/michael/Desktop/iOS-Apps/README_images/splitBill2.png)
 
 <h3>Features</h3>
 
