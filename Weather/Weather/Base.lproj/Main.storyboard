@@ -3,30 +3,104 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Rounded-Medium.otf">
+            <string>SFProRounded-Medium</string>
+        </array>
+        <array key="SF-Pro-Rounded-Regular.otf">
+            <string>SFProRounded-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Weather" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="2vU-ju-1MH">
+                                <rect key="frame" x="20" y="59" width="353" height="759"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="YAB-CZ-6rZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
+                                        <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="dMw-pq-pyg"/>
+                                        </constraints>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8RO-bk-NJW">
+                                        <rect key="frame" x="106.66666666666669" y="100" width="140" height="140"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Katowice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ws-pt-A5u">
+                                                <rect key="frame" x="0.0" y="0.0" width="140" height="70"/>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="35"/>
+                                                <color key="textColor" red="0.97647058823529409" green="0.96470588235294119" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iep-E1-Kkx">
+                                                <rect key="frame" x="24.999999999999986" y="70" width="90" height="70"/>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="90"/>
+                                                <color key="textColor" red="0.97647058823529409" green="0.96470588235294119" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="140" id="XsJ-6S-VeF"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8zi-R9-ZR6">
+                                        <rect key="frame" x="0.0" y="290" width="353" height="469"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YX4-yU-gyl">
+                                                <rect key="frame" x="116.66666666666666" y="0.6666666666666643" width="120.66666666666666" height="99"/>
+                                                <color key="tintColor" red="0.97647058823529409" green="0.96470588235294119" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="2MQ-6r-oYv"/>
+                                                    <constraint firstAttribute="height" constant="100" id="tTT-Cf-jEA"/>
+                                                </constraints>
+                                                <imageReference key="image" image="cloud.sun" catalog="system" symbolScale="default"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="YX4-yU-gyl" firstAttribute="centerX" secondItem="8zi-R9-ZR6" secondAttribute="centerX" id="BMH-l3-xuR"/>
+                                            <constraint firstItem="YX4-yU-gyl" firstAttribute="top" secondItem="8zi-R9-ZR6" secondAttribute="top" id="zjA-vJ-Yzj"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="8zi-R9-ZR6" secondAttribute="trailing" id="Z5k-zu-bHJ"/>
+                                    <constraint firstItem="YAB-CZ-6rZ" firstAttribute="leading" secondItem="2vU-ju-1MH" secondAttribute="leading" id="gxD-HI-zeR"/>
+                                    <constraint firstItem="8zi-R9-ZR6" firstAttribute="leading" secondItem="2vU-ju-1MH" secondAttribute="leading" id="oIl-QL-71d"/>
+                                    <constraint firstAttribute="trailing" secondItem="YAB-CZ-6rZ" secondAttribute="trailing" id="vHy-4u-CoF"/>
+                                    <constraint firstItem="YAB-CZ-6rZ" firstAttribute="top" secondItem="2vU-ju-1MH" secondAttribute="top" id="zNh-d6-zPs"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2vU-ju-1MH" secondAttribute="trailing" constant="20" id="089-PS-UcW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2vU-ju-1MH" secondAttribute="bottom" id="DL5-27-OpP"/>
+                            <constraint firstItem="2vU-ju-1MH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Qnd-qE-jvb"/>
+                            <constraint firstItem="2vU-ju-1MH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qXJ-NJ-mCD"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="cloud.sun" catalog="system" width="128" height="98"/>
     </resources>
 </document>
