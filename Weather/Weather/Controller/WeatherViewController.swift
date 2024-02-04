@@ -7,10 +7,16 @@
 
 import UIKit
 
-class WeatherViewController: UIViewController {
+class WeatherViewController: UIViewController, UISearchBarDelegate {
 
+    @IBOutlet weak var cityLbl: UILabel!
+    @IBOutlet weak var temperatureLbl: UILabel!
+    @IBOutlet weak var conditionImageView: UIImageView!
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchBar.delegate = self
     }
 }
 

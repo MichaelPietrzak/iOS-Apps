@@ -28,13 +28,17 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="2vU-ju-1MH">
                                 <rect key="frame" x="20" y="59" width="353" height="759"/>
                                 <subviews>
-                                    <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="YAB-CZ-6rZ">
+                                    <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="search" translatesAutoresizingMaskIntoConstraints="NO" id="YAB-CZ-6rZ">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
                                         <color key="backgroundColor" name="BackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="dMw-pq-pyg"/>
                                         </constraints>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                                        <scopeButtonTitles>
+                                            <string>Title</string>
+                                            <string>Title</string>
+                                        </scopeButtonTitles>
                                     </searchBar>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8RO-bk-NJW">
                                         <rect key="frame" x="106.66666666666669" y="100" width="140" height="140"/>
@@ -96,6 +100,12 @@
                             <constraint firstItem="2vU-ju-1MH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qXJ-NJ-mCD"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityLbl" destination="4Ws-pt-A5u" id="znE-ie-6pE"/>
+                        <outlet property="conditionImageView" destination="YX4-yU-gyl" id="taz-Bc-huF"/>
+                        <outlet property="searchBar" destination="YAB-CZ-6rZ" id="F2M-K9-ZK6"/>
+                        <outlet property="temperatureLbl" destination="Iep-E1-Kkx" id="po2-Dm-wyt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
