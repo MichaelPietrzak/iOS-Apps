@@ -22,5 +22,10 @@ class WeatherViewController: UIViewController, UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
            searchBar.endEditing(true)
        }
+    
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+          cityLbl.text = searchBar.text
+          searchBar.text = ""
+      }
 }
 
