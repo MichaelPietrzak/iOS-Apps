@@ -23,6 +23,15 @@ class WeatherViewController: UIViewController, UISearchBarDelegate {
            searchBar.endEditing(true)
        }
     
+    func searchBarShouldEndEditing(_ searchBar: UISearchBar) -> Bool {
+         if searchBar.text != "" {
+             return true
+         } else {
+             searchBar.placeholder = "Type something..."
+             return false
+         }
+     }
+    
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
           cityLbl.text = searchBar.text
           searchBar.text = ""
