@@ -18,5 +18,9 @@ class WeatherViewController: UIViewController, UISearchBarDelegate {
         super.viewDidLoad()
         searchBar.delegate = self
     }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+           searchBar.endEditing(true)
+       }
 }
 
