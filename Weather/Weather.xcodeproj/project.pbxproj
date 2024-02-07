@@ -98,6 +98,7 @@
 		4C921E6A2B632A7600C9A4CE /* SF-Compact-Text-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C921E152B632A7600C9A4CE /* SF-Compact-Text-Thin.otf */; };
 		4C921E6B2B632A7600C9A4CE /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C921E162B632A7600C9A4CE /* SF-Pro-Display-Medium.otf */; };
 		4C921E6C2B632A7600C9A4CE /* SF-Pro-Text-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C921E172B632A7600C9A4CE /* SF-Pro-Text-Ultralight.otf */; };
+		4CB70C882B73E51800E688DB /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB70C872B73E51800E688DB /* WeatherManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -194,6 +195,7 @@
 		4C921E152B632A7600C9A4CE /* SF-Compact-Text-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-Thin.otf"; sourceTree = "<group>"; };
 		4C921E162B632A7600C9A4CE /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
 		4C921E172B632A7600C9A4CE /* SF-Pro-Text-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Ultralight.otf"; sourceTree = "<group>"; };
+		4CB70C872B73E51800E688DB /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -334,6 +336,7 @@
 		4CA90F352B6A77FC00397D78 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4CB70C872B73E51800E688DB /* WeatherManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -512,6 +515,7 @@
 			files = (
 				4C61E3C22B62DBB600EE32BD /* WeatherViewController.swift in Sources */,
 				4C61E3BE2B62DBB500EE32BD /* AppDelegate.swift in Sources */,
+				4CB70C882B73E51800E688DB /* WeatherManager.swift in Sources */,
 				4C61E3C02B62DBB600EE32BD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
