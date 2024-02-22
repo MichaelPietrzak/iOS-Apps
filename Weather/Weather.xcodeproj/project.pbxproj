@@ -13,6 +13,7 @@
 		4C61E3C52B62DBB600EE32BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C61E3C32B62DBB600EE32BD /* Main.storyboard */; };
 		4C61E3C72B62DBB700EE32BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C61E3C62B62DBB700EE32BD /* Assets.xcassets */; };
 		4C61E3CA2B62DBB700EE32BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C61E3C82B62DBB700EE32BD /* LaunchScreen.storyboard */; };
+		4C8231092B7FADEC008C39B2 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8231082B7FADEC008C39B2 /* WeatherData.swift */; };
 		4C921E182B632A7600C9A4CE /* SF-Compact-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C921DC32B632A6300C9A4CE /* SF-Compact-Text-Regular.otf */; };
 		4C921E192B632A7600C9A4CE /* SF-Compact-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C921DC42B632A6300C9A4CE /* SF-Compact-Text-Medium.otf */; };
 		4C921E1A2B632A7600C9A4CE /* SF-Compact.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C921DC52B632A6400C9A4CE /* SF-Compact.ttf */; };
@@ -110,6 +111,7 @@
 		4C61E3C62B62DBB700EE32BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C61E3C92B62DBB700EE32BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C61E3CB2B62DBB700EE32BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C8231082B7FADEC008C39B2 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		4C921DC32B632A6300C9A4CE /* SF-Compact-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-Regular.otf"; sourceTree = "<group>"; };
 		4C921DC42B632A6300C9A4CE /* SF-Compact-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-Medium.otf"; sourceTree = "<group>"; };
 		4C921DC52B632A6400C9A4CE /* SF-Compact.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact.ttf"; sourceTree = "<group>"; };
@@ -337,6 +339,7 @@
 			isa = PBXGroup;
 			children = (
 				4CB70C872B73E51800E688DB /* WeatherManager.swift */,
+				4C8231082B7FADEC008C39B2 /* WeatherData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -514,6 +517,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C61E3C22B62DBB600EE32BD /* WeatherViewController.swift in Sources */,
+				4C8231092B7FADEC008C39B2 /* WeatherData.swift in Sources */,
 				4C61E3BE2B62DBB500EE32BD /* AppDelegate.swift in Sources */,
 				4CB70C882B73E51800E688DB /* WeatherManager.swift in Sources */,
 				4C61E3C02B62DBB600EE32BD /* SceneDelegate.swift in Sources */,
