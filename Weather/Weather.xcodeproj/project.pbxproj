@@ -100,6 +100,7 @@
 		4C921E6B2B632A7600C9A4CE /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C921E162B632A7600C9A4CE /* SF-Pro-Display-Medium.otf */; };
 		4C921E6C2B632A7600C9A4CE /* SF-Pro-Text-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C921E172B632A7600C9A4CE /* SF-Pro-Text-Ultralight.otf */; };
 		4CB70C882B73E51800E688DB /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB70C872B73E51800E688DB /* WeatherManager.swift */; };
+		4CE781EE2B88E25500BAC925 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE781ED2B88E25500BAC925 /* WeatherModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -198,6 +199,7 @@
 		4C921E162B632A7600C9A4CE /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
 		4C921E172B632A7600C9A4CE /* SF-Pro-Text-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Ultralight.otf"; sourceTree = "<group>"; };
 		4CB70C872B73E51800E688DB /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		4CE781ED2B88E25500BAC925 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -340,6 +342,7 @@
 			children = (
 				4CB70C872B73E51800E688DB /* WeatherManager.swift */,
 				4C8231082B7FADEC008C39B2 /* WeatherData.swift */,
+				4CE781ED2B88E25500BAC925 /* WeatherModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -520,6 +523,7 @@
 				4C8231092B7FADEC008C39B2 /* WeatherData.swift in Sources */,
 				4C61E3BE2B62DBB500EE32BD /* AppDelegate.swift in Sources */,
 				4CB70C882B73E51800E688DB /* WeatherManager.swift in Sources */,
+				4CE781EE2B88E25500BAC925 /* WeatherModel.swift in Sources */,
 				4C61E3C02B62DBB600EE32BD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
