@@ -21,10 +21,10 @@ struct WeatherManager {
     
     func fetchWeather(cityName: String) {
         let urlString = "\(weatherURL)\(secureAPIkey)&q=\(cityName)\(units)"
-        performRequest(urlString: urlString)
+        performRequest(with: urlString)
     }
     
-    func performRequest(urlString: String) {
+    func performRequest(with urlString: String) {
         if let url = URL(string: urlString) {
             let session = URLSession(configuration: .default)
             let task = session.dataTask(with: url) { (data, response, error) in
@@ -33,7 +33,7 @@ struct WeatherManager {
                     return
                 }
                 if let safeData = data {
-                    if let weather = parseJSON(weatherData: safeData) {
+                    if let weather = parseJSON(safeData) {
                         delegate?.didUpdateWeather(self, weather: weather)
                     }
                 }
@@ -42,7 +42,7 @@ struct WeatherManager {
         }
     }
     
-    func parseJSON(weatherData: Data) -> WeatherModel? {
+    func parseJSON(_ weatherData: Data) -> WeatherModel? {
         let decoder = JSONDecoder()
         do {
             let decodedData = try decoder.decode(WeatherData.self, from: weatherData)
