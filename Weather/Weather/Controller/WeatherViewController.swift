@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 class WeatherViewController: UIViewController {
     
@@ -15,11 +16,13 @@ class WeatherViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     
     var weatherManager = WeatherManager()
+    var locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         searchBar.delegate = self
         weatherManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
     }
 }
 
