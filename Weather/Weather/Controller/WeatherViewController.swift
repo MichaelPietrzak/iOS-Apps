@@ -20,9 +20,13 @@ class WeatherViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         searchBar.delegate = self
         weatherManager.delegate = self
+        locationManager.delegate = self
+        
         locationManager.requestWhenInUseAuthorization()
+        locationManager.requestLocation()
     }
 }
 
@@ -61,6 +65,24 @@ extension WeatherViewController: WeatherManagerDelegate {
     }
     
     func didFailWithError(error: Error) {
+        print(error)
+    }
+}
+
+//MARK: - CLLocationManagerDelegate
+
+extension WeatherViewController: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        if let location = locations.first {
+            let lat = location.coordinate.latitude
+            let lon = location.coordinate.longitude
+            print(lat)
+            print(lon)
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print(error)
     }
 }
