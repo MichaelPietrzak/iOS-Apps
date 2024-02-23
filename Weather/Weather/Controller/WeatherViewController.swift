@@ -61,6 +61,7 @@ extension WeatherViewController: WeatherManagerDelegate {
         DispatchQueue.main.async {
             self.temperatureLbl.text = "\(weather.temperatureString)°"
             self.conditionImageView.image = UIImage(systemName: weather.conditionName)
+            self.cityLbl.text = weather.cityName
         }
     }
     
@@ -77,8 +78,7 @@ extension WeatherViewController: CLLocationManagerDelegate {
         if let location = locations.first {
             let lat = location.coordinate.latitude
             let lon = location.coordinate.longitude
-            print(lat)
-            print(lon)
+            weatherManager.fetchWeather(latitude: lat, longitude: lon)
         }
     }
     
