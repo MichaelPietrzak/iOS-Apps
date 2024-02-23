@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WeatherViewController: UIViewController, UISearchBarDelegate, WeatherManagerDelegate {
+class WeatherViewController: UIViewController {
     
     @IBOutlet weak var cityLbl: UILabel!
     @IBOutlet weak var temperatureLbl: UILabel!
@@ -21,7 +21,11 @@ class WeatherViewController: UIViewController, UISearchBarDelegate, WeatherManag
         searchBar.delegate = self
         weatherManager.delegate = self
     }
-    
+}
+
+//MARK: - UISearchBarDelegate
+
+extension WeatherViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.endEditing(true)
     }
@@ -41,7 +45,11 @@ class WeatherViewController: UIViewController, UISearchBarDelegate, WeatherManag
         }
         searchBar.text = ""
     }
-    
+}
+
+//MARK: - WeatherManagerDelegate
+
+extension WeatherViewController: WeatherManagerDelegate {
     func didUpdateWeather(_ weatherManager: WeatherManager, weather: WeatherModel) {
         DispatchQueue.main.async {
             self.temperatureLbl.text = "\(weather.temperatureString)°"
@@ -53,4 +61,3 @@ class WeatherViewController: UIViewController, UISearchBarDelegate, WeatherManag
         print(error)
     }
 }
-
