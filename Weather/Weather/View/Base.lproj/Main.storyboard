@@ -28,20 +28,38 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="2vU-ju-1MH">
                                 <rect key="frame" x="20" y="59" width="353" height="759"/>
                                 <subviews>
-                                    <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="search" translatesAutoresizingMaskIntoConstraints="NO" id="YAB-CZ-6rZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
-                                        <color key="backgroundColor" name="BackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="dMw-pq-pyg"/>
-                                        </constraints>
-                                        <textInputTraits key="textInputTraits" returnKeyType="search"/>
-                                        <scopeButtonTitles>
-                                            <string>Title</string>
-                                            <string>Title</string>
-                                        </scopeButtonTitles>
-                                    </searchBar>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hlF-qq-l8p">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="134.33333333333334"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ali-iv-mBe">
+                                                <rect key="frame" x="0.0" y="42.333333333333329" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="GEu-0m-tI6"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="location" catalog="system">
+                                                    <color key="baseForegroundColor" name="TextColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="currentLocationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iEM-mj-NaX"/>
+                                                </connections>
+                                            </button>
+                                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="search" translatesAutoresizingMaskIntoConstraints="NO" id="YAB-CZ-6rZ">
+                                                <rect key="frame" x="50" y="42.333333333333329" width="303" height="50"/>
+                                                <color key="backgroundColor" name="BackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="dMw-pq-pyg"/>
+                                                </constraints>
+                                                <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                                                <scopeButtonTitles>
+                                                    <string>Title</string>
+                                                    <string>Title</string>
+                                                </scopeButtonTitles>
+                                            </searchBar>
+                                        </subviews>
+                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8RO-bk-NJW">
-                                        <rect key="frame" x="106.66666666666669" y="100" width="140" height="140"/>
+                                        <rect key="frame" x="106.66666666666669" y="184.33333333333334" width="140" height="140.00000000000003"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Katowice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ws-pt-A5u">
                                                 <rect key="frame" x="0.0" y="0.0" width="140" height="70"/>
@@ -50,7 +68,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iep-E1-Kkx">
-                                                <rect key="frame" x="24.999999999999986" y="70" width="90" height="70"/>
+                                                <rect key="frame" x="24.999999999999986" y="69.999999999999972" width="90" height="70"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="90"/>
                                                 <color key="textColor" name="TextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -62,7 +80,7 @@
                                         </constraints>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8zi-R9-ZR6">
-                                        <rect key="frame" x="0.0" y="290" width="353" height="469"/>
+                                        <rect key="frame" x="0.0" y="374.33333333333326" width="353" height="384.66666666666674"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YX4-yU-gyl">
                                                 <rect key="frame" x="116.66666666666666" y="0.6666666666666643" width="120.66666666666666" height="99"/>
@@ -84,10 +102,9 @@
                                 <color key="backgroundColor" name="BackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="8zi-R9-ZR6" secondAttribute="trailing" id="Z5k-zu-bHJ"/>
-                                    <constraint firstItem="YAB-CZ-6rZ" firstAttribute="leading" secondItem="2vU-ju-1MH" secondAttribute="leading" id="gxD-HI-zeR"/>
+                                    <constraint firstItem="hlF-qq-l8p" firstAttribute="leading" secondItem="2vU-ju-1MH" secondAttribute="leading" id="hlk-CF-O61"/>
                                     <constraint firstItem="8zi-R9-ZR6" firstAttribute="leading" secondItem="2vU-ju-1MH" secondAttribute="leading" id="oIl-QL-71d"/>
-                                    <constraint firstAttribute="trailing" secondItem="YAB-CZ-6rZ" secondAttribute="trailing" id="vHy-4u-CoF"/>
-                                    <constraint firstItem="YAB-CZ-6rZ" firstAttribute="top" secondItem="2vU-ju-1MH" secondAttribute="top" id="zNh-d6-zPs"/>
+                                    <constraint firstAttribute="trailing" secondItem="hlF-qq-l8p" secondAttribute="trailing" id="oKS-zB-oPl"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -114,6 +131,7 @@
     </scenes>
     <resources>
         <image name="cloud.sun" catalog="system" width="128" height="98"/>
+        <image name="location" catalog="system" width="128" height="119"/>
         <namedColor name="BackgroundColor">
             <color red="0.97600001096725464" green="0.9649999737739563" blue="0.93300002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

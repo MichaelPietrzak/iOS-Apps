@@ -28,6 +28,10 @@ class WeatherViewController: UIViewController {
         locationManager.requestWhenInUseAuthorization()
         locationManager.requestLocation()
     }
+    
+    @IBAction func currentLocationPressed(_ sender: UIButton) {
+        locationManager.requestLocation()
+    }
 }
 
 //MARK: - UISearchBarDelegate
@@ -76,6 +80,7 @@ extension WeatherViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
         if let location = locations.first {
+            locationManager.stopUpdatingLocation()
             let lat = location.coordinate.latitude
             let lon = location.coordinate.longitude
             weatherManager.fetchWeather(latitude: lat, longitude: lon)
