@@ -14,6 +14,7 @@ class WeatherViewController: UIViewController {
     @IBOutlet weak var temperatureLbl: UILabel!
     @IBOutlet weak var conditionImageView: UIImageView!
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var myLocationBtn: UILabel!
     
     var weatherManager = WeatherManager()
     var locationManager = CLLocationManager()
@@ -27,10 +28,12 @@ class WeatherViewController: UIViewController {
         
         locationManager.requestWhenInUseAuthorization()
         locationManager.requestLocation()
+        myLocationBtn.text = ""
     }
     
     @IBAction func currentLocationPressed(_ sender: UIButton) {
         locationManager.requestLocation()
+        myLocationBtn.text = "My Location"
     }
 }
 
@@ -52,6 +55,7 @@ extension WeatherViewController: UISearchBarDelegate {
     
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
         if let city = searchBar.text {
+            myLocationBtn.text = ""
             weatherManager.fetchWeather(cityName: city)
         }
         searchBar.text = ""
@@ -64,7 +68,7 @@ extension WeatherViewController: WeatherManagerDelegate {
     func didUpdateWeather(_ weatherManager: WeatherManager, weather: WeatherModel) {
         DispatchQueue.main.async {
             self.temperatureLbl.text = "\(weather.temperatureString)°"
-            self.conditionImageView.image = UIImage(systemName: weather.conditionName)
+            self.conditionImageView.image = UIImage(systemName: weather.conditionName)?.withRenderingMode(.alwaysOriginal)
             self.cityLbl.text = weather.cityName
         }
     }
@@ -80,6 +84,7 @@ extension WeatherViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
         if let location = locations.first {
+            myLocationBtn.text = "My Location"
             locationManager.stopUpdatingLocation()
             let lat = location.coordinate.latitude
             let lon = location.coordinate.longitude

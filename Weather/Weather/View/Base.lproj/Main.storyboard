@@ -9,11 +9,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="SF-Pro-Rounded-Bold.otf">
+            <string>SFProRounded-Bold</string>
+        </array>
         <array key="SF-Pro-Rounded-Medium.otf">
             <string>SFProRounded-Medium</string>
-        </array>
-        <array key="SF-Pro-Rounded-Regular.otf">
-            <string>SFProRounded-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -25,14 +25,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="2vU-ju-1MH">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="2vU-ju-1MH">
                                 <rect key="frame" x="20" y="59" width="353" height="759"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hlF-qq-l8p">
-                                        <rect key="frame" x="0.0" y="0.0" width="353" height="134.33333333333334"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ali-iv-mBe">
-                                                <rect key="frame" x="0.0" y="42.333333333333329" width="50" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="49.333333333333336" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="GEu-0m-tI6"/>
                                                 </constraints>
@@ -45,7 +45,7 @@
                                                 </connections>
                                             </button>
                                             <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="search" translatesAutoresizingMaskIntoConstraints="NO" id="YAB-CZ-6rZ">
-                                                <rect key="frame" x="50" y="42.333333333333329" width="303" height="50"/>
+                                                <rect key="frame" x="49.333333333333343" y="0.0" width="303.66666666666663" height="50"/>
                                                 <color key="backgroundColor" name="BackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="dMw-pq-pyg"/>
@@ -57,46 +57,57 @@
                                                 </scopeButtonTitles>
                                             </searchBar>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="EeX-de-C7X"/>
+                                        </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8RO-bk-NJW">
-                                        <rect key="frame" x="106.66666666666669" y="184.33333333333334" width="140" height="140.00000000000003"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8RO-bk-NJW">
+                                        <rect key="frame" x="86.666666666666686" y="75" width="180" height="80"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Katowice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ws-pt-A5u">
-                                                <rect key="frame" x="0.0" y="0.0" width="140" height="70"/>
-                                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="35"/>
-                                                <color key="textColor" name="TextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iep-E1-Kkx">
-                                                <rect key="frame" x="24.999999999999986" y="69.999999999999972" width="90" height="70"/>
-                                                <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="90"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YX4-yU-gyl">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <color key="tintColor" name="TextColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="Ze8-kg-6yr"/>
+                                                    <constraint firstAttribute="height" constant="80" id="tTT-Cf-jEA"/>
+                                                </constraints>
+                                                <imageReference key="image" image="sun.max.fill" catalog="system" renderingMode="original"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8.3°" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Iep-E1-Kkx">
+                                                <rect key="frame" x="100" y="16" width="80" height="48"/>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="40"/>
                                                 <color key="textColor" name="TextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" name="BackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="140" id="XsJ-6S-VeF"/>
+                                            <constraint firstAttribute="height" constant="80" id="QZs-1B-Rah"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HYo-Uz-oh3">
+                                        <rect key="frame" x="100.00000000000001" y="180" width="153.33333333333337" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="juh-6c-8Sf">
+                                                <rect key="frame" x="21.666666666666664" y="0.0" width="109.66666666666669" height="27"/>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="wroclaw" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ws-pt-A5u">
+                                                <rect key="frame" x="0.0" y="32" width="153.33333333333334" height="48"/>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="40"/>
+                                                <color key="textColor" name="TextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="7lX-o0-i1r"/>
                                         </constraints>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8zi-R9-ZR6">
-                                        <rect key="frame" x="0.0" y="374.33333333333326" width="353" height="384.66666666666674"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YX4-yU-gyl">
-                                                <rect key="frame" x="116.66666666666666" y="0.6666666666666643" width="120.66666666666666" height="99"/>
-                                                <color key="tintColor" name="TextColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="120" id="2MQ-6r-oYv"/>
-                                                    <constraint firstAttribute="height" constant="100" id="tTT-Cf-jEA"/>
-                                                </constraints>
-                                                <imageReference key="image" image="cloud.sun" catalog="system" symbolScale="default"/>
-                                            </imageView>
-                                        </subviews>
+                                        <rect key="frame" x="0.0" y="285" width="353" height="474"/>
                                         <color key="backgroundColor" name="BackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstItem="YX4-yU-gyl" firstAttribute="centerX" secondItem="8zi-R9-ZR6" secondAttribute="centerX" id="BMH-l3-xuR"/>
-                                            <constraint firstItem="YX4-yU-gyl" firstAttribute="top" secondItem="8zi-R9-ZR6" secondAttribute="top" id="zjA-vJ-Yzj"/>
-                                        </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" name="BackgroundColor"/>
@@ -118,8 +129,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="cityLbl" destination="4Ws-pt-A5u" id="znE-ie-6pE"/>
+                        <outlet property="cityLbl" destination="4Ws-pt-A5u" id="iAD-3d-mNV"/>
                         <outlet property="conditionImageView" destination="YX4-yU-gyl" id="taz-Bc-huF"/>
+                        <outlet property="myLocationBtn" destination="juh-6c-8Sf" id="Ubt-Kq-9qi"/>
                         <outlet property="searchBar" destination="YAB-CZ-6rZ" id="F2M-K9-ZK6"/>
                         <outlet property="temperatureLbl" destination="Iep-E1-Kkx" id="po2-Dm-wyt"/>
                     </connections>
@@ -130,8 +142,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cloud.sun" catalog="system" width="128" height="98"/>
         <image name="location" catalog="system" width="128" height="119"/>
+        <image name="sun.max.fill" catalog="system" width="128" height="125"/>
         <namedColor name="BackgroundColor">
             <color red="0.97600001096725464" green="0.9649999737739563" blue="0.93300002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
