@@ -113,9 +113,7 @@
                                 </subviews>
                                 <color key="backgroundColor" name="BackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="8zi-R9-ZR6" secondAttribute="trailing" id="Z5k-zu-bHJ"/>
                                     <constraint firstItem="hlF-qq-l8p" firstAttribute="leading" secondItem="2vU-ju-1MH" secondAttribute="leading" id="hlk-CF-O61"/>
-                                    <constraint firstItem="8zi-R9-ZR6" firstAttribute="leading" secondItem="2vU-ju-1MH" secondAttribute="leading" id="oIl-QL-71d"/>
                                     <constraint firstAttribute="trailing" secondItem="hlF-qq-l8p" secondAttribute="trailing" id="oKS-zB-oPl"/>
                                 </constraints>
                             </stackView>
