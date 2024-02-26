@@ -6,6 +6,7 @@ iOS Apps created for self development and practice.
 ## Table of contents
 
 - [Split Bill](#split-bill)
+- [Weather](#weather)
 
 <br />
 
@@ -20,3 +21,29 @@ Simple bill splitting, tip calculating app.
 
 - Split bill depending on the tip chosen and number of people to split
 - With a click it recalculates how much each person owns
+
+<br />
+
+## Weather
+Weather app providing current location temperature as well as from any city in the world.
+
+<h3>Illustrations</h3
+
+![User permission](README_images/weather1.png) ![My Location screen](README_images/weather2.png) ![New Location screen](README_images/weather3.png)
+
+<h3>Features</h3>
+
+- Implementation of user's permissions as per Apple standards
+- Dark Mode Support
+- Up to date current weather data with temperature, city, weather symbol
+- current location refresh button
+- search option for any city's weather
+- Implementation of Delegate Design Pattern
+- Project structure based on MVC
+- Using OpenWeather API : https://openweathermap.org
+- Secure API Key using Enviroment variable (Generated API key required)
+- URLSession for networking
+- JSON Decoding
+- DispatchQueue for performance
+- CoreLocation
+- Auto Layout for all iPhones
