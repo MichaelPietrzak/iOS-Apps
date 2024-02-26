@@ -32,20 +32,22 @@ struct WeatherManager {
     }
     
     func performRequest(with urlString: String) {
-        if let url = URL(string: urlString) {
-            let session = URLSession(configuration: .default)
-            let task = session.dataTask(with: url) { (data, response, error) in
-                if error != nil {
-                    delegate?.didFailWithError(error: error!)
-                    return
-                }
-                if let safeData = data {
-                    if let weather = parseJSON(safeData) {
-                        delegate?.didUpdateWeather(self, weather: weather)
+        DispatchQueue.global(qos: .userInitiated).async {
+            if let url = URL(string: urlString) {
+                let session = URLSession(configuration: .default)
+                let task = session.dataTask(with: url) { (data, response, error) in
+                    if error != nil {
+                        delegate?.didFailWithError(error: error!)
+                        return
+                    }
+                    if let safeData = data {
+                        if let weather = parseJSON(safeData) {
+                            delegate?.didUpdateWeather(self, weather: weather)
+                        }
                     }
                 }
+                task.resume()
             }
-            task.resume()
         }
     }
     

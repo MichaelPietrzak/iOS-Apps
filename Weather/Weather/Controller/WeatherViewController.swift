@@ -14,7 +14,7 @@ class WeatherViewController: UIViewController {
     @IBOutlet weak var temperatureLbl: UILabel!
     @IBOutlet weak var conditionImageView: UIImageView!
     @IBOutlet weak var searchBar: UISearchBar!
-    @IBOutlet weak var myLocationBtn: UILabel!
+    @IBOutlet weak var myLocationLbl: UILabel!
     
     var weatherManager = WeatherManager()
     var locationManager = CLLocationManager()
@@ -28,12 +28,12 @@ class WeatherViewController: UIViewController {
         
         locationManager.requestWhenInUseAuthorization()
         locationManager.requestLocation()
-        myLocationBtn.text = ""
+        locationManager.startUpdatingLocation()
     }
     
     @IBAction func currentLocationPressed(_ sender: UIButton) {
         locationManager.requestLocation()
-        myLocationBtn.text = "My Location"
+        locationManager.startUpdatingLocation()
     }
 }
 
@@ -55,8 +55,8 @@ extension WeatherViewController: UISearchBarDelegate {
     
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
         if let city = searchBar.text {
-            myLocationBtn.text = ""
             weatherManager.fetchWeather(cityName: city)
+            myLocationLbl.text = "New Location"
         }
         searchBar.text = ""
     }
@@ -66,6 +66,7 @@ extension WeatherViewController: UISearchBarDelegate {
 
 extension WeatherViewController: WeatherManagerDelegate {
     func didUpdateWeather(_ weatherManager: WeatherManager, weather: WeatherModel) {
+        
         DispatchQueue.main.async {
             self.temperatureLbl.text = "\(weather.temperatureString)°"
             self.conditionImageView.image = UIImage(systemName: weather.conditionName)?.withRenderingMode(.alwaysOriginal)
@@ -83,12 +84,14 @@ extension WeatherViewController: WeatherManagerDelegate {
 extension WeatherViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
-        if let location = locations.first {
-            myLocationBtn.text = "My Location"
-            locationManager.stopUpdatingLocation()
-            let lat = location.coordinate.latitude
-            let lon = location.coordinate.longitude
-            weatherManager.fetchWeather(latitude: lat, longitude: lon)
+        DispatchQueue.main.async {
+            if let location = locations.first {
+                self.locationManager.stopUpdatingLocation()
+                self.myLocationLbl.text = "My Location"
+                let lat = location.coordinate.latitude
+                let lon = location.coordinate.longitude
+                self.weatherManager.fetchWeather(latitude: lat, longitude: lon)
+            }
         }
     }
     
