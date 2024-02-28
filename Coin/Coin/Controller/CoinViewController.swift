@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CoinViewController: UIViewController {
 
     @IBOutlet weak var priceView: UIView!
     @IBOutlet weak var currencyPicker: UIPickerView!
