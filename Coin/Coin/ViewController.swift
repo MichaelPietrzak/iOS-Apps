@@ -9,11 +9,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var priceView: UIView!
+    @IBOutlet weak var currencyPicker: UIPickerView!
+    @IBOutlet weak var currencyLbl: UILabel!
+    @IBOutlet weak var coinLbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
-
 }
-

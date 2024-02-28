@@ -107,6 +107,12 @@
                             <constraint firstItem="AFS-BE-rkn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="dPS-EE-JTz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="coinLbl" destination="ES6-A8-Ihs" id="ZHB-N9-0yW"/>
+                        <outlet property="currencyLbl" destination="xfU-en-TKj" id="0lW-QU-58m"/>
+                        <outlet property="currencyPicker" destination="enr-sw-fTd" id="TRl-xv-j1P"/>
+                        <outlet property="priceView" destination="gDc-de-kFh" id="tk5-Zy-i4c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
