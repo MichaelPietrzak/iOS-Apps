@@ -207,6 +207,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C332D9A2B8FCFAE0078B47F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4C393A022B8E52690012DD4C /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4C332D9B2B8FCFB50078B47F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4C393A042B8E52690012DD4C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C332D9C2B8FCFC20078B47F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		4C3939F22B8E52690012DD4C = {
 			isa = PBXGroup;
 			children = (
@@ -229,8 +252,9 @@
 				4C393A142B8E54750012DD4C /* CustomFonts */,
 				4C3939FE2B8E52690012DD4C /* AppDelegate.swift */,
 				4C393A002B8E52690012DD4C /* SceneDelegate.swift */,
-				4C393A022B8E52690012DD4C /* ViewController.swift */,
-				4C393A042B8E52690012DD4C /* Main.storyboard */,
+				4C332D9C2B8FCFC20078B47F /* Model */,
+				4C332D9B2B8FCFB50078B47F /* View */,
+				4C332D9A2B8FCFAE0078B47F /* Controller */,
 				4C393A072B8E526A0012DD4C /* Assets.xcassets */,
 				4C393A092B8E526A0012DD4C /* LaunchScreen.storyboard */,
 				4C393A0C2B8E526A0012DD4C /* Info.plist */,
