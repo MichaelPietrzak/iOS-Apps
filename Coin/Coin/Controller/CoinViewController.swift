@@ -37,6 +37,10 @@ class CoinViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         coinManager.currencyArray[row]
     }
     
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        coinManager.getCoinPrice(for: coinManager.currencyArray[row])
+    }
+    
     func layoutUI() {
         priceView.layer.cornerRadius = 10
     }
