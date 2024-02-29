@@ -8,5 +8,5 @@
 import Foundation
 
 struct CoinManager {
-
+    let currencyArray: [String] = [] // TODO: - add currencies
 }
