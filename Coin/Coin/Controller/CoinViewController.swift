@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CoinViewController: UIViewController, UIPickerViewDataSource {
+class CoinViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
     @IBOutlet weak var priceView: UIView!
     @IBOutlet weak var currencyPicker: UIPickerView!
@@ -20,6 +20,7 @@ class CoinViewController: UIViewController, UIPickerViewDataSource {
         super.viewDidLoad()
         
         currencyPicker.dataSource = self
+        currencyPicker.delegate = self
         
         layoutUI()
     }
@@ -30,6 +31,10 @@ class CoinViewController: UIViewController, UIPickerViewDataSource {
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return coinManager.currencyArray.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        coinManager.currencyArray[row]
     }
     
     func layoutUI() {
