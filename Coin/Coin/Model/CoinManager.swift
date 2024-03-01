@@ -16,6 +16,23 @@ struct CoinManager {
     
     func fetchCoinPrice(for currency: String) {
         let urlString = "\(coinURL)/\(currency)?apikey=\(secureAPIKey)"
-        print(urlString)
+        performRequest(with: urlString)
+    }
+    
+    func performRequest(with urlString: String) {
+        DispatchQueue.global(qos: .userInitiated).sync {
+            if let url = URL(string: urlString) {
+                let session = URLSession(configuration: .default)
+                let task = session.dataTask(with: url) { data, response, error in
+                    if error != nil {
+                        print(error!)
+                    }
+                    if let safeData = data {
+                        print(String(data: safeData, encoding: .utf8)!)
+                    }
+                }
+                task.resume()
+            }
+        }
     }
 }
