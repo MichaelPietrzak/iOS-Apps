@@ -99,6 +99,7 @@
 		4C393ABC2B8E54DE0012DD4C /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C393A672B8E54DE0012DD4C /* SF-Pro-Rounded-Bold.otf */; };
 		4C393ABD2B8E54DE0012DD4C /* SF-Pro-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C393A682B8E54DE0012DD4C /* SF-Pro-Text-Heavy.otf */; };
 		4C393ABE2B8E54DE0012DD4C /* SF-Pro-Display-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C393A692B8E54DE0012DD4C /* SF-Pro-Display-Thin.otf */; };
+		4C8859562B92280F001217B4 /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8859552B92280F001217B4 /* CoinData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -196,6 +197,7 @@
 		4C393A672B8E54DE0012DD4C /* SF-Pro-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Bold.otf"; sourceTree = "<group>"; };
 		4C393A682B8E54DE0012DD4C /* SF-Pro-Text-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Heavy.otf"; sourceTree = "<group>"; };
 		4C393A692B8E54DE0012DD4C /* SF-Pro-Display-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Thin.otf"; sourceTree = "<group>"; };
+		4C8859552B92280F001217B4 /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				4C332D9D2B8FD11F0078B47F /* CoinManager.swift */,
+				4C8859552B92280F001217B4 /* CoinData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -515,6 +518,7 @@
 			files = (
 				4C332D9E2B8FD11F0078B47F /* CoinManager.swift in Sources */,
 				4C393A032B8E52690012DD4C /* CoinViewController.swift in Sources */,
+				4C8859562B92280F001217B4 /* CoinData.swift in Sources */,
 				4C3939FF2B8E52690012DD4C /* AppDelegate.swift in Sources */,
 				4C393A012B8E52690012DD4C /* SceneDelegate.swift in Sources */,
 			);

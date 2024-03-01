@@ -28,11 +28,24 @@ struct CoinManager {
                         print(error!)
                     }
                     if let safeData = data {
-                        print(String(data: safeData, encoding: .utf8)!)
+//                        print(String(data: safeData, encoding: .utf8)!)
+                        print(parseJSON(safeData))
                     }
                 }
                 task.resume()
             }
+        }
+    }
+    
+    func parseJSON(_ coinData: Data) {
+        let decoder = JSONDecoder()
+        do {
+            let decodedData = try decoder.decode(CoinData.self, from: coinData)
+            let rate = decodedData.rate
+            print(rate)
+            
+        } catch {
+            print(error)
         }
     }
 }
