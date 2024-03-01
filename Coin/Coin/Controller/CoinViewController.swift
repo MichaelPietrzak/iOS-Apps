@@ -7,22 +7,31 @@
 
 import UIKit
 
-class CoinViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
-
+class CoinViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, CoinManagerDelegate {
+    
     @IBOutlet weak var priceView: UIView!
     @IBOutlet weak var currencyPicker: UIPickerView!
     @IBOutlet weak var currencyLbl: UILabel!
     @IBOutlet weak var coinLbl: UILabel!
     
-    let coinManager = CoinManager()
+    var coinManager = CoinManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         currencyPicker.dataSource = self
         currencyPicker.delegate = self
+        coinManager.delegate = self
         
         layoutUI()
+    }
+    
+    func didUpdateCoinPrice(_ coinManager: CoinManager, coinPrice: CoinModel, currency: String) {
+        
+    }
+    
+    func didFailWithError(error: Error) {
+        
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
