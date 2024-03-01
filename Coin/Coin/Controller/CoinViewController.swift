@@ -27,11 +27,14 @@ class CoinViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     }
     
     func didUpdateCoinPrice(_ coinManager: CoinManager, coinPrice: CoinModel, currency: String) {
-        
+        DispatchQueue.main.async {
+            self.coinLbl.text = "\(coinPrice.lastPriceString)"
+            self.currencyLbl.text = currency
+        }
     }
     
     func didFailWithError(error: Error) {
-        
+        print(error)
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
