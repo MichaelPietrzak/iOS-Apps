@@ -7,6 +7,7 @@ iOS Apps created for self development and practice.
 
 - [Split Bill](#split-bill)
 - [Weather](#weather)
+- [Coin](#coin)
 
 <br />
 
@@ -46,4 +47,26 @@ Weather app providing current location temperature as well as from any city in t
 - JSON Decoding
 - DispatchQueue for performance
 - CoreLocation
+- Auto Layout for all iPhones
+
+<br />
+
+## Coin
+Coin app providing latest bitcoin price rates in different currencies.
+
+<h3>Illustrations</h3
+
+![Coin screen](README_images/coin.png)
+
+<h3>Features</h3>
+
+- Latest bitcoin price rate in different currencies
+- Dark Mode Support
+- Implementation of Delegate Design Pattern
+- Project structure based on MVC
+- Using CoinAPI : https://www.coinapi.io
+- Secure API Key using Enviroment variable (Generated API key required)
+- URLSession for networking
+- JSON Decoding
+- DispatchQueue for performance
 - Auto Layout for all iPhones
