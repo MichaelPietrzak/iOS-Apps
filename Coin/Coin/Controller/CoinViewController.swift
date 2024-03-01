@@ -31,6 +31,8 @@ class CoinViewController: UIViewController {
     }
 }
 
+//MARK: - CoinManagerDelegate
+
 extension CoinViewController: CoinManagerDelegate {
     func didUpdateCoinPrice(_ coinManager: CoinManager, coinPrice: CoinModel, currency: String) {
         DispatchQueue.main.async {
@@ -44,6 +46,8 @@ extension CoinViewController: CoinManagerDelegate {
     }
 }
 
+//MARK: - UIPickerViewDataSource
+
 extension CoinViewController: UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -53,6 +57,8 @@ extension CoinViewController: UIPickerViewDataSource {
         return coinManager.currencyArray.count
     }
 }
+
+//MARK: - UIPickerViewDelegate
 
 extension CoinViewController: UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
