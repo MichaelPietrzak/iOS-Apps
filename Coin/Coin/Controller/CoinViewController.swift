@@ -38,7 +38,7 @@ class CoinViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        coinManager.getCoinPrice(for: coinManager.currencyArray[row])
+        coinManager.fetchCoinPrice(for: coinManager.currencyArray[row])
     }
     
     func layoutUI() {
