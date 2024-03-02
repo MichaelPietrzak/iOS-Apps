@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4C7B8CA32B9376CE00483B5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7B8CA22B9376CE00483B5A /* AppDelegate.swift */; };
 		4C7B8CA52B9376CE00483B5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7B8CA42B9376CE00483B5A /* SceneDelegate.swift */; };
-		4C7B8CA72B9376CE00483B5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7B8CA62B9376CE00483B5A /* ViewController.swift */; };
+		4C7B8CA72B9376CE00483B5A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7B8CA62B9376CE00483B5A /* WelcomeViewController.swift */; };
 		4C7B8CAA2B9376CE00483B5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C7B8CA82B9376CE00483B5A /* Main.storyboard */; };
 		4C7B8CAC2B9376D000483B5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C7B8CAB2B9376D000483B5A /* Assets.xcassets */; };
 		4C7B8CAF2B9376D000483B5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C7B8CAD2B9376D000483B5A /* LaunchScreen.storyboard */; };
@@ -110,13 +110,16 @@
 		4C7B8D762B9377CC00483B5A /* SF-Pro-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C7B8D152B9377CB00483B5A /* SF-Pro-Italic.ttf */; };
 		4C7B8D772B9377CC00483B5A /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C7B8D162B9377CB00483B5A /* SF-Pro-Text-Semibold.otf */; };
 		4C7B8D782B9377CC00483B5A /* SF-Pro-Display-UltralightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C7B8D172B9377CB00483B5A /* SF-Pro-Display-UltralightItalic.otf */; };
+		4CE9E6F42B937CB800434484 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9E6F32B937CB800434484 /* LoginViewController.swift */; };
+		4CE9E6F62B937D1400434484 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9E6F52B937D1400434484 /* RegisterViewController.swift */; };
+		4CE9E6F82B937D3400434484 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9E6F72B937D3400434484 /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4C7B8C9F2B9376CE00483B5A /* Hello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hello.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C7B8CA22B9376CE00483B5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C7B8CA42B9376CE00483B5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4C7B8CA62B9376CE00483B5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C7B8CA62B9376CE00483B5A /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		4C7B8CA92B9376CE00483B5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C7B8CAB2B9376D000483B5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C7B8CAE2B9376D000483B5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -218,6 +221,9 @@
 		4C7B8D152B9377CB00483B5A /* SF-Pro-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Italic.ttf"; sourceTree = "<group>"; };
 		4C7B8D162B9377CB00483B5A /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
 		4C7B8D172B9377CB00483B5A /* SF-Pro-Display-UltralightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-UltralightItalic.otf"; sourceTree = "<group>"; };
+		4CE9E6F32B937CB800434484 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4CE9E6F52B937D1400434484 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		4CE9E6F72B937D3400434484 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -378,7 +384,10 @@
 		4C7B8D7A2B937ABA00483B5A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4C7B8CA62B9376CE00483B5A /* ViewController.swift */,
+				4C7B8CA62B9376CE00483B5A /* WelcomeViewController.swift */,
+				4CE9E6F32B937CB800434484 /* LoginViewController.swift */,
+				4CE9E6F52B937D1400434484 /* RegisterViewController.swift */,
+				4CE9E6F72B937D3400434484 /* ChatViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -558,8 +567,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C7B8CA72B9376CE00483B5A /* ViewController.swift in Sources */,
+				4CE9E6F42B937CB800434484 /* LoginViewController.swift in Sources */,
+				4CE9E6F62B937D1400434484 /* RegisterViewController.swift in Sources */,
+				4C7B8CA72B9376CE00483B5A /* WelcomeViewController.swift in Sources */,
 				4C7B8CA32B9376CE00483B5A /* AppDelegate.swift in Sources */,
+				4CE9E6F82B937D3400434484 /* ChatViewController.swift in Sources */,
 				4C7B8CA52B9376CE00483B5A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
