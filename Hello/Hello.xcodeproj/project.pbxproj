@@ -253,8 +253,9 @@
 				4C7B8CB62B93776B00483B5A /* CustomFonts */,
 				4C7B8CA22B9376CE00483B5A /* AppDelegate.swift */,
 				4C7B8CA42B9376CE00483B5A /* SceneDelegate.swift */,
-				4C7B8CA62B9376CE00483B5A /* ViewController.swift */,
-				4C7B8CA82B9376CE00483B5A /* Main.storyboard */,
+				4C7B8D7B2B937AC300483B5A /* Model */,
+				4C7B8D792B937AB200483B5A /* View */,
+				4C7B8D7A2B937ABA00483B5A /* Controller */,
 				4C7B8CAB2B9376D000483B5A /* Assets.xcassets */,
 				4C7B8CAD2B9376D000483B5A /* LaunchScreen.storyboard */,
 				4C7B8CB02B9376D000483B5A /* Info.plist */,
@@ -364,6 +365,29 @@
 				4C7B8CC72B9377BC00483B5A /* SF-Pro.ttf */,
 			);
 			path = CustomFonts;
+			sourceTree = "<group>";
+		};
+		4C7B8D792B937AB200483B5A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4C7B8CA82B9376CE00483B5A /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C7B8D7A2B937ABA00483B5A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4C7B8CA62B9376CE00483B5A /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4C7B8D7B2B937AC300483B5A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
