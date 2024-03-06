@@ -9,11 +9,13 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
 
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var handWaveImage: UIImageView!
+    @IBOutlet weak var signInButton: UIButton!
+    @IBOutlet weak var createAccountButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
 
