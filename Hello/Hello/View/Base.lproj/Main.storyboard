@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pP1-nH-GoS">
     <device id="retina6_12" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
@@ -127,21 +127,6 @@
             </objects>
             <point key="canvasLocation" x="139.69465648854961" y="-2.1126760563380285"/>
         </scene>
-        <!--Register View Controller-->
-        <scene sceneID="fTS-fG-euE">
-            <objects>
-                <viewController id="52W-VF-TVi" customClass="RegisterViewController" customModule="Hello" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="g3N-Hv-tbV">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="diq-hn-jOr"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aXl-BB-Q6T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1616" y="-2"/>
-        </scene>
         <!--Chat View Controller-->
         <scene sceneID="Fwh-Uo-KlK">
             <objects>
@@ -248,6 +233,104 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PLY-bF-eQa" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="871" y="-2"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="717-L3-aNF">
+            <objects>
+                <viewController id="pP1-nH-GoS" customClass="RegisterViewController" customModule="Hello" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uah-o9-O3T">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PDG-tb-XbA">
+                                <rect key="frame" x="20" y="59" width="353" height="340"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kkW-N4-6hx">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Create Account" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCg-PT-Q59">
+                                        <rect key="frame" x="0.0" y="70" width="353" height="60"/>
+                                        <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dqg-vD-HCC">
+                                        <rect key="frame" x="0.0" y="140" width="353" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create account to message and keep contact with your loved ones." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PbR-Be-vCy">
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="60"/>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="17"/>
+                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="PbR-Be-vCy" firstAttribute="top" secondItem="dqg-vD-HCC" secondAttribute="top" id="8Iq-p7-lHz"/>
+                                            <constraint firstItem="PbR-Be-vCy" firstAttribute="width" secondItem="dqg-vD-HCC" secondAttribute="width" id="We9-LN-3yg"/>
+                                            <constraint firstAttribute="bottom" secondItem="PbR-Be-vCy" secondAttribute="bottom" id="bHB-7Z-q3j"/>
+                                            <constraint firstItem="PbR-Be-vCy" firstAttribute="centerX" secondItem="dqg-vD-HCC" secondAttribute="centerX" id="cmd-zw-zLn"/>
+                                        </constraints>
+                                    </view>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bIn-8u-VOU">
+                                        <rect key="frame" x="0.0" y="210" width="353" height="60"/>
+                                        <color key="textColor" systemColor="placeholderTextColor"/>
+                                        <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6wi-t7-gi3">
+                                        <rect key="frame" x="0.0" y="280" width="353" height="60"/>
+                                        <color key="textColor" systemColor="placeholderTextColor"/>
+                                        <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SXB-Sw-9mh">
+                                <rect key="frame" x="20" y="429" width="353" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWN-ZC-1bA">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Lr0-Mh-myY"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" cornerStyle="large">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Create Account">
+                                                    <attributes>
+                                                        <font key="NSFont" size="20" name="SFProRounded-Regular"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="createAccountPressed:" destination="pP1-nH-GoS" eventType="touchUpInside" id="SQI-T8-Mwr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EBs-zI-6Kd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EBs-zI-6Kd" firstAttribute="trailing" secondItem="SXB-Sw-9mh" secondAttribute="trailing" constant="20" id="IVL-aj-EtQ"/>
+                            <constraint firstItem="SXB-Sw-9mh" firstAttribute="leading" secondItem="EBs-zI-6Kd" secondAttribute="leading" constant="20" id="Jcj-K1-wBv"/>
+                            <constraint firstItem="SXB-Sw-9mh" firstAttribute="top" secondItem="PDG-tb-XbA" secondAttribute="bottom" constant="30" id="P7Z-cz-YkG"/>
+                            <constraint firstItem="PDG-tb-XbA" firstAttribute="top" secondItem="EBs-zI-6Kd" secondAttribute="top" id="UfN-XR-Hs7"/>
+                            <constraint firstItem="PDG-tb-XbA" firstAttribute="leading" secondItem="EBs-zI-6Kd" secondAttribute="leading" constant="20" id="Yck-sg-0dM"/>
+                            <constraint firstItem="EBs-zI-6Kd" firstAttribute="trailing" secondItem="PDG-tb-XbA" secondAttribute="trailing" constant="20" id="nma-X1-w8g"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="bIn-8u-VOU" id="dE8-1W-7Th"/>
+                        <outlet property="passwordTextField" destination="6wi-t7-gi3" id="aRd-0m-AeE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jTG-3T-tYV" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1595" y="-2"/>
         </scene>
     </scenes>
     <resources>
