@@ -12,6 +12,9 @@
         <array key="SF-Pro-Rounded-Bold.otf">
             <string>SFProRounded-Bold</string>
         </array>
+        <array key="SF-Pro-Rounded-Regular.otf">
+            <string>SFProRounded-Regular</string>
+        </array>
         <array key="SF-Pro-Rounded-Semibold.otf">
             <string>SFProRounded-Semibold</string>
         </array>
@@ -124,21 +127,6 @@
             </objects>
             <point key="canvasLocation" x="139.69465648854961" y="-2.1126760563380285"/>
         </scene>
-        <!--Login View Controller-->
-        <scene sceneID="1yc-oj-NjX">
-            <objects>
-                <viewController id="v1E-mr-462" customClass="LoginViewController" customModule="Hello" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="YIa-O0-L5L">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="J9A-lD-Gwz"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Mny-eA-EcC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="866" y="-2"/>
-        </scene>
         <!--Register View Controller-->
         <scene sceneID="fTS-fG-euE">
             <objects>
@@ -169,20 +157,115 @@
             </objects>
             <point key="canvasLocation" x="2332" y="-2"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="WRB-lh-T1M">
+            <objects>
+                <viewController id="CLD-ii-3bC" customClass="LoginViewController" customModule="Hello" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MsG-56-sbT">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="elx-Bm-9S0">
+                                <rect key="frame" x="20" y="59" width="353" height="340"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SqM-Co-lLv">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Sign In" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSP-db-NUl">
+                                        <rect key="frame" x="0.0" y="70" width="353" height="60"/>
+                                        <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kbR-6o-ejc">
+                                        <rect key="frame" x="0.0" y="140" width="353" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in to access and message your loved ones." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZ9-IH-jbE">
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="60"/>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="17"/>
+                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="pZ9-IH-jbE" firstAttribute="centerX" secondItem="kbR-6o-ejc" secondAttribute="centerX" id="35n-Dg-c78"/>
+                                            <constraint firstItem="pZ9-IH-jbE" firstAttribute="top" secondItem="kbR-6o-ejc" secondAttribute="top" id="9hD-IP-sxL"/>
+                                            <constraint firstAttribute="bottom" secondItem="pZ9-IH-jbE" secondAttribute="bottom" id="O6F-JL-izW"/>
+                                            <constraint firstItem="pZ9-IH-jbE" firstAttribute="width" secondItem="kbR-6o-ejc" secondAttribute="width" id="goW-ct-gjb"/>
+                                        </constraints>
+                                    </view>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N79-rl-gAL">
+                                        <rect key="frame" x="0.0" y="210" width="353" height="60"/>
+                                        <color key="textColor" systemColor="placeholderTextColor"/>
+                                        <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IfR-ig-GYz">
+                                        <rect key="frame" x="0.0" y="280" width="353" height="60"/>
+                                        <color key="textColor" systemColor="placeholderTextColor"/>
+                                        <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="66T-Ue-mId">
+                                <rect key="frame" x="20" y="429" width="353" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ee-58-tVL">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="pbl-8M-TMw"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Sign In" cornerStyle="large">
+                                            <fontDescription key="titleFontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="signInPressed:" destination="CLD-ii-3bC" eventType="touchUpInside" id="4dg-dT-AUF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2Sv-HA-mAb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="66T-Ue-mId" firstAttribute="leading" secondItem="2Sv-HA-mAb" secondAttribute="leading" constant="20" id="2wa-ug-47O"/>
+                            <constraint firstItem="2Sv-HA-mAb" firstAttribute="trailing" secondItem="66T-Ue-mId" secondAttribute="trailing" constant="20" id="Kdy-oy-fhp"/>
+                            <constraint firstItem="66T-Ue-mId" firstAttribute="top" secondItem="elx-Bm-9S0" secondAttribute="bottom" constant="30" id="XXo-mx-6aR"/>
+                            <constraint firstItem="elx-Bm-9S0" firstAttribute="leading" secondItem="2Sv-HA-mAb" secondAttribute="leading" constant="20" id="YQd-NX-qgK"/>
+                            <constraint firstItem="2Sv-HA-mAb" firstAttribute="trailing" secondItem="elx-Bm-9S0" secondAttribute="trailing" constant="20" id="Za9-a3-hYf"/>
+                            <constraint firstItem="elx-Bm-9S0" firstAttribute="top" secondItem="2Sv-HA-mAb" secondAttribute="top" id="sNj-lr-c4x"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="N79-rl-gAL" id="fD2-m6-GJ6"/>
+                        <outlet property="passwordTextField" destination="IfR-ig-GYz" id="LWV-3t-5cz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PLY-bF-eQa" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="871" y="-2"/>
+        </scene>
     </scenes>
     <resources>
         <image name="hands.and.sparkles" catalog="system" width="124" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="placeholderTextColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29803921570000003" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="secondaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="tertiaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29803921570000003" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
