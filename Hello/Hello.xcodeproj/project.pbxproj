@@ -111,7 +111,7 @@
 		4C7B8D772B9377CC00483B5A /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C7B8D162B9377CB00483B5A /* SF-Pro-Text-Semibold.otf */; };
 		4C7B8D782B9377CC00483B5A /* SF-Pro-Display-UltralightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C7B8D172B9377CB00483B5A /* SF-Pro-Display-UltralightItalic.otf */; };
 		4CE9E6F42B937CB800434484 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9E6F32B937CB800434484 /* LoginViewController.swift */; };
-		4CE9E6F62B937D1400434484 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9E6F52B937D1400434484 /* RegisterViewController.swift */; };
+		4CE9E6F62B937D1400434484 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9E6F52B937D1400434484 /* CreateAccountViewController.swift */; };
 		4CE9E6F82B937D3400434484 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9E6F72B937D3400434484 /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -222,7 +222,7 @@
 		4C7B8D162B9377CB00483B5A /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
 		4C7B8D172B9377CB00483B5A /* SF-Pro-Display-UltralightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-UltralightItalic.otf"; sourceTree = "<group>"; };
 		4CE9E6F32B937CB800434484 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		4CE9E6F52B937D1400434484 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		4CE9E6F52B937D1400434484 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		4CE9E6F72B937D3400434484 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -386,7 +386,7 @@
 			children = (
 				4C7B8CA62B9376CE00483B5A /* WelcomeViewController.swift */,
 				4CE9E6F32B937CB800434484 /* LoginViewController.swift */,
-				4CE9E6F52B937D1400434484 /* RegisterViewController.swift */,
+				4CE9E6F52B937D1400434484 /* CreateAccountViewController.swift */,
 				4CE9E6F72B937D3400434484 /* ChatViewController.swift */,
 			);
 			path = Controller;
@@ -568,7 +568,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CE9E6F42B937CB800434484 /* LoginViewController.swift in Sources */,
-				4CE9E6F62B937D1400434484 /* RegisterViewController.swift in Sources */,
+				4CE9E6F62B937D1400434484 /* CreateAccountViewController.swift in Sources */,
 				4C7B8CA72B9376CE00483B5A /* WelcomeViewController.swift in Sources */,
 				4C7B8CA32B9376CE00483B5A /* AppDelegate.swift in Sources */,
 				4CE9E6F82B937D3400434484 /* ChatViewController.swift in Sources */,

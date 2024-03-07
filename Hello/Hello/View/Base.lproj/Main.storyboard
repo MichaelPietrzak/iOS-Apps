@@ -234,10 +234,10 @@
             </objects>
             <point key="canvasLocation" x="871" y="-2"/>
         </scene>
-        <!--Register View Controller-->
+        <!--Create Account View Controller-->
         <scene sceneID="717-L3-aNF">
             <objects>
-                <viewController id="pP1-nH-GoS" customClass="RegisterViewController" customModule="Hello" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pP1-nH-GoS" customClass="CreateAccountViewController" customModule="Hello" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uah-o9-O3T">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
