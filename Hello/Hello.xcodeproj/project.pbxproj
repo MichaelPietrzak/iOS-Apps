@@ -113,6 +113,7 @@
 		4CE9E6F42B937CB800434484 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9E6F32B937CB800434484 /* LoginViewController.swift */; };
 		4CE9E6F62B937D1400434484 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9E6F52B937D1400434484 /* CreateAccountViewController.swift */; };
 		4CE9E6F82B937D3400434484 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9E6F72B937D3400434484 /* ChatViewController.swift */; };
+		F4E9E278A5340CA0A497E942 /* Pods_Hello.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5019EC66E5D7B5043EC1A582 /* Pods_Hello.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -224,6 +225,9 @@
 		4CE9E6F32B937CB800434484 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4CE9E6F52B937D1400434484 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		4CE9E6F72B937D3400434484 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		5019EC66E5D7B5043EC1A582 /* Pods_Hello.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hello.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80A8202ACC482CAEEB64B4C6 /* Pods-Hello.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hello.release.xcconfig"; path = "Target Support Files/Pods-Hello/Pods-Hello.release.xcconfig"; sourceTree = "<group>"; };
+		9F5AE3AA3023685B15682682 /* Pods-Hello.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hello.debug.xcconfig"; path = "Target Support Files/Pods-Hello/Pods-Hello.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,17 +235,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4E9E278A5340CA0A497E942 /* Pods_Hello.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		374A7DD9F20C14C90B2AF4BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5019EC66E5D7B5043EC1A582 /* Pods_Hello.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4C7B8C962B9376CE00483B5A = {
 			isa = PBXGroup;
 			children = (
 				4C7B8CA12B9376CE00483B5A /* Hello */,
 				4C7B8CA02B9376CE00483B5A /* Products */,
+				5BD0CF55782F8EC713795C27 /* Pods */,
+				374A7DD9F20C14C90B2AF4BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -399,6 +414,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		5BD0CF55782F8EC713795C27 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F5AE3AA3023685B15682682 /* Pods-Hello.debug.xcconfig */,
+				80A8202ACC482CAEEB64B4C6 /* Pods-Hello.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -406,9 +430,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C7B8CB32B9376D000483B5A /* Build configuration list for PBXNativeTarget "Hello" */;
 			buildPhases = (
+				7CE52579B4B25D5A00687E77 /* [CP] Check Pods Manifest.lock */,
 				4C7B8C9B2B9376CE00483B5A /* Sources */,
 				4C7B8C9C2B9376CE00483B5A /* Frameworks */,
 				4C7B8C9D2B9376CE00483B5A /* Resources */,
+				2B5D56F6FFBFD0D3E588E805 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -562,6 +588,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B5D56F6FFBFD0D3E588E805 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hello/Pods-Hello-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hello/Pods-Hello-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hello/Pods-Hello-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CE52579B4B25D5A00687E77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hello-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4C7B8C9B2B9376CE00483B5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -635,7 +703,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -698,7 +766,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -719,6 +787,7 @@
 		};
 		4C7B8CB42B9376D000483B5A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F5AE3AA3023685B15682682 /* Pods-Hello.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -751,6 +820,7 @@
 		};
 		4C7B8CB52B9376D000483B5A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80A8202ACC482CAEEB64B4C6 /* Pods-Hello.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
