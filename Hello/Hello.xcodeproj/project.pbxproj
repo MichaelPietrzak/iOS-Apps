@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C3D20E82B9F6C04000D5146 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C3D20E72B9F6C04000D5146 /* GoogleService-Info.plist */; };
 		4C7B8CA32B9376CE00483B5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7B8CA22B9376CE00483B5A /* AppDelegate.swift */; };
 		4C7B8CA52B9376CE00483B5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7B8CA42B9376CE00483B5A /* SceneDelegate.swift */; };
 		4C7B8CA72B9376CE00483B5A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7B8CA62B9376CE00483B5A /* WelcomeViewController.swift */; };
@@ -117,6 +118,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C3D20E72B9F6C04000D5146 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4C7B8C9F2B9376CE00483B5A /* Hello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hello.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C7B8CA22B9376CE00483B5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C7B8CA42B9376CE00483B5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -280,6 +282,7 @@
 				4C7B8CAB2B9376D000483B5A /* Assets.xcassets */,
 				4C7B8CAD2B9376D000483B5A /* LaunchScreen.storyboard */,
 				4C7B8CB02B9376D000483B5A /* Info.plist */,
+				4C3D20E72B9F6C04000D5146 /* GoogleService-Info.plist */,
 			);
 			path = Hello;
 			sourceTree = "<group>";
@@ -563,6 +566,7 @@
 				4C7B8D622B9377CC00483B5A /* SF-Pro-Text-BlackItalic.otf in Resources */,
 				4C7B8D2D2B9377CB00483B5A /* SF-Pro-Display-RegularItalic.otf in Resources */,
 				4C7B8D782B9377CC00483B5A /* SF-Pro-Display-UltralightItalic.otf in Resources */,
+				4C3D20E82B9F6C04000D5146 /* GoogleService-Info.plist in Resources */,
 				4C7B8D372B9377CB00483B5A /* SF-Pro-Display-LightItalic.otf in Resources */,
 				4C7B8D722B9377CC00483B5A /* SF-Pro-Display-Thin.otf in Resources */,
 				4C7B8D2A2B9377CB00483B5A /* SF-Pro-Text-Bold.otf in Resources */,
