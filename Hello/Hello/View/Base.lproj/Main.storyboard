@@ -137,7 +137,7 @@
         <!--Chat View Controller-->
         <scene sceneID="Fwh-Uo-KlK">
             <objects>
-                <viewController id="yiK-kf-7ba" customClass="ChatViewController" customModule="Hello" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="chatViewController" id="yiK-kf-7ba" customClass="ChatViewController" customModule="Hello" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IHO-Yw-MEz">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -313,23 +313,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PDG-tb-XbA">
-                                <rect key="frame" x="20" y="103" width="353" height="340"/>
+                                <rect key="frame" x="20" y="103" width="353" height="290"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kkW-N4-6hx">
-                                        <rect key="frame" x="0.0" y="0.0" width="353" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Create Account" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCg-PT-Q59">
-                                        <rect key="frame" x="0.0" y="70" width="353" height="60"/>
+                                        <rect key="frame" x="0.0" y="60" width="353" height="50"/>
                                         <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dqg-vD-HCC">
-                                        <rect key="frame" x="0.0" y="140" width="353" height="60"/>
+                                        <rect key="frame" x="0.0" y="120" width="353" height="50"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create account to message and keep contact with your loved ones." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PbR-Be-vCy">
-                                                <rect key="frame" x="0.0" y="0.0" width="353" height="60"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="17"/>
                                                 <color key="textColor" systemColor="secondaryLabelColor"/>
                                                 <nil key="highlightedColor"/>
@@ -344,21 +344,38 @@
                                         </constraints>
                                     </view>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bIn-8u-VOU">
-                                        <rect key="frame" x="0.0" y="210" width="353" height="60"/>
-                                        <color key="textColor" systemColor="placeholderTextColor"/>
+                                        <rect key="frame" x="0.0" y="180" width="353" height="50"/>
                                         <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6wi-t7-gi3">
-                                        <rect key="frame" x="0.0" y="280" width="353" height="60"/>
-                                        <color key="textColor" systemColor="placeholderTextColor"/>
+                                        <rect key="frame" x="0.0" y="240" width="353" height="50"/>
                                         <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="go" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2bR-VV-1Jo">
+                                <rect key="frame" x="20" y="403" width="353" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4rF-Vh-40j">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="40"/>
+                                        <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="14"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9eB-xV-hBT"/>
+                                    <constraint firstItem="4rF-Vh-40j" firstAttribute="centerX" secondItem="2bR-VV-1Jo" secondAttribute="centerX" id="GyZ-Qz-6bK"/>
+                                    <constraint firstItem="4rF-Vh-40j" firstAttribute="width" secondItem="2bR-VV-1Jo" secondAttribute="width" id="IB1-vb-mEm"/>
+                                    <constraint firstItem="4rF-Vh-40j" firstAttribute="top" secondItem="2bR-VV-1Jo" secondAttribute="top" id="ukZ-NB-EsU"/>
+                                    <constraint firstAttribute="bottom" secondItem="4rF-Vh-40j" secondAttribute="bottom" id="wPm-gD-0TD"/>
+                                </constraints>
+                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SXB-Sw-9mh">
-                                <rect key="frame" x="20" y="473" width="353" height="50"/>
+                                <rect key="frame" x="20" y="443" width="353" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWN-ZC-1bA">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
@@ -377,7 +394,6 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="createAccountPressed:" destination="pP1-nH-GoS" eventType="touchUpInside" id="SQI-T8-Mwr"/>
-                                            <segue destination="yiK-kf-7ba" kind="show" identifier="CreateAccountToChat" id="of1-id-HKu"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -386,17 +402,21 @@
                         <viewLayoutGuide key="safeArea" id="EBs-zI-6Kd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="SXB-Sw-9mh" firstAttribute="top" secondItem="2bR-VV-1Jo" secondAttribute="bottom" id="157-2P-PdZ"/>
+                            <constraint firstItem="EBs-zI-6Kd" firstAttribute="trailing" secondItem="2bR-VV-1Jo" secondAttribute="trailing" constant="20" id="9Ti-pe-guL"/>
+                            <constraint firstItem="2bR-VV-1Jo" firstAttribute="top" secondItem="PDG-tb-XbA" secondAttribute="bottom" constant="10" id="Bzw-GV-sqz"/>
                             <constraint firstItem="EBs-zI-6Kd" firstAttribute="trailing" secondItem="SXB-Sw-9mh" secondAttribute="trailing" constant="20" id="IVL-aj-EtQ"/>
                             <constraint firstItem="SXB-Sw-9mh" firstAttribute="leading" secondItem="EBs-zI-6Kd" secondAttribute="leading" constant="20" id="Jcj-K1-wBv"/>
-                            <constraint firstItem="SXB-Sw-9mh" firstAttribute="top" secondItem="PDG-tb-XbA" secondAttribute="bottom" constant="30" id="P7Z-cz-YkG"/>
                             <constraint firstItem="PDG-tb-XbA" firstAttribute="top" secondItem="EBs-zI-6Kd" secondAttribute="top" id="UfN-XR-Hs7"/>
                             <constraint firstItem="PDG-tb-XbA" firstAttribute="leading" secondItem="EBs-zI-6Kd" secondAttribute="leading" constant="20" id="Yck-sg-0dM"/>
+                            <constraint firstItem="2bR-VV-1Jo" firstAttribute="leading" secondItem="EBs-zI-6Kd" secondAttribute="leading" constant="20" id="i2B-9I-pJN"/>
                             <constraint firstItem="EBs-zI-6Kd" firstAttribute="trailing" secondItem="PDG-tb-XbA" secondAttribute="trailing" constant="20" id="nma-X1-w8g"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="94k-hv-f20"/>
                     <connections>
                         <outlet property="emailTextField" destination="bIn-8u-VOU" id="dE8-1W-7Th"/>
+                        <outlet property="errorLabel" destination="4rF-Vh-40j" id="Eu8-kc-g8F"/>
                         <outlet property="passwordTextField" destination="6wi-t7-gi3" id="aRd-0m-AeE"/>
                     </connections>
                 </viewController>
@@ -423,9 +443,9 @@
             <point key="canvasLocation" x="139.69465648854961" y="-2.1126760563380285"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="of1-id-HKu"/>
-    </inferredMetricsTieBreakers>
+    <designables>
+        <designable name="KfX-qt-5vw"/>
+    </designables>
     <resources>
         <image name="hands.and.sparkles" catalog="system" width="124" height="128"/>
         <image name="paperplane" catalog="system" width="128" height="119"/>
@@ -440,6 +460,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
