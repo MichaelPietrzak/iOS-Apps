@@ -87,7 +87,7 @@
                                             <fontDescription key="titleFontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="20"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="CLD-ii-3bC" kind="show" id="Ttq-bi-90V"/>
+                                            <segue destination="jOJ-e8-Dfe" kind="show" id="4ci-EM-otj"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIP-ww-psF">
@@ -143,7 +143,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="IN2-dQ-Q61">
-                                <rect key="frame" x="0.0" y="103" width="393" height="635"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="679"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BubbleChat" id="7cJ-Yo-yWf">
@@ -171,7 +171,6 @@
                                         <buttonConfiguration key="configuration" style="plain" image="paperplane" catalog="system" cornerStyle="large"/>
                                         <connections>
                                             <action selector="sendPressed:" destination="yiK-kf-7ba" eventType="touchUpInside" id="Tb4-W3-qiN"/>
-                                            <action selector="signInPressed:" destination="CLD-ii-3bC" eventType="touchUpInside" id="DWT-os-etd"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -209,100 +208,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eFa-K8-LMu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2623.6641221374043" y="-2.1126760563380285"/>
-        </scene>
-        <!--Login View Controller-->
-        <scene sceneID="WRB-lh-T1M">
-            <objects>
-                <viewController id="CLD-ii-3bC" customClass="LoginViewController" customModule="Hello" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="MsG-56-sbT">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="elx-Bm-9S0">
-                                <rect key="frame" x="20" y="103" width="353" height="340"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SqM-Co-lLv">
-                                        <rect key="frame" x="0.0" y="0.0" width="353" height="60"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Sign In" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSP-db-NUl">
-                                        <rect key="frame" x="0.0" y="70" width="353" height="60"/>
-                                        <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="40"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kbR-6o-ejc">
-                                        <rect key="frame" x="0.0" y="140" width="353" height="60"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in to access and message your loved ones." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZ9-IH-jbE">
-                                                <rect key="frame" x="0.0" y="0.0" width="353" height="60"/>
-                                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="17"/>
-                                                <color key="textColor" systemColor="secondaryLabelColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstItem="pZ9-IH-jbE" firstAttribute="centerX" secondItem="kbR-6o-ejc" secondAttribute="centerX" id="35n-Dg-c78"/>
-                                            <constraint firstItem="pZ9-IH-jbE" firstAttribute="top" secondItem="kbR-6o-ejc" secondAttribute="top" id="9hD-IP-sxL"/>
-                                            <constraint firstAttribute="bottom" secondItem="pZ9-IH-jbE" secondAttribute="bottom" id="O6F-JL-izW"/>
-                                            <constraint firstItem="pZ9-IH-jbE" firstAttribute="width" secondItem="kbR-6o-ejc" secondAttribute="width" id="goW-ct-gjb"/>
-                                        </constraints>
-                                    </view>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N79-rl-gAL">
-                                        <rect key="frame" x="0.0" y="210" width="353" height="60"/>
-                                        <color key="textColor" systemColor="placeholderTextColor"/>
-                                        <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IfR-ig-GYz">
-                                        <rect key="frame" x="0.0" y="280" width="353" height="60"/>
-                                        <color key="textColor" systemColor="placeholderTextColor"/>
-                                        <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
-                                    </textField>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="66T-Ue-mId">
-                                <rect key="frame" x="20" y="473" width="353" height="50"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ee-58-tVL">
-                                        <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="pbl-8M-TMw"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Sign In" cornerStyle="large">
-                                            <fontDescription key="titleFontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="20"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="signInPressed:" destination="CLD-ii-3bC" eventType="touchUpInside" id="4dg-dT-AUF"/>
-                                            <segue destination="yiK-kf-7ba" kind="show" identifier="SignInToChat" id="eUz-Iw-p3D"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="2Sv-HA-mAb"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="66T-Ue-mId" firstAttribute="leading" secondItem="2Sv-HA-mAb" secondAttribute="leading" constant="20" id="2wa-ug-47O"/>
-                            <constraint firstItem="2Sv-HA-mAb" firstAttribute="trailing" secondItem="66T-Ue-mId" secondAttribute="trailing" constant="20" id="Kdy-oy-fhp"/>
-                            <constraint firstItem="66T-Ue-mId" firstAttribute="top" secondItem="elx-Bm-9S0" secondAttribute="bottom" constant="30" id="XXo-mx-6aR"/>
-                            <constraint firstItem="elx-Bm-9S0" firstAttribute="leading" secondItem="2Sv-HA-mAb" secondAttribute="leading" constant="20" id="YQd-NX-qgK"/>
-                            <constraint firstItem="2Sv-HA-mAb" firstAttribute="trailing" secondItem="elx-Bm-9S0" secondAttribute="trailing" constant="20" id="Za9-a3-hYf"/>
-                            <constraint firstItem="elx-Bm-9S0" firstAttribute="top" secondItem="2Sv-HA-mAb" secondAttribute="top" id="sNj-lr-c4x"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="GeB-7r-9Ue"/>
-                    <connections>
-                        <outlet property="emailTextField" destination="N79-rl-gAL" id="fD2-m6-GJ6"/>
-                        <outlet property="passwordTextField" destination="IfR-ig-GYz" id="LWV-3t-5cz"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PLY-bF-eQa" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1840.4580152671756" y="-335.21126760563379"/>
         </scene>
         <!--Create Account View Controller-->
         <scene sceneID="717-L3-aNF">
@@ -441,6 +346,120 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pal-ME-0sm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139.69465648854961" y="-2.1126760563380285"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="kwZ-KH-z9i">
+            <objects>
+                <viewController id="jOJ-e8-Dfe" customClass="LoginViewController" customModule="Hello" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DFP-NW-8y1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uBo-j5-Qe2">
+                                <rect key="frame" x="20" y="103" width="353" height="290"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JKQ-tb-1mF">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Sign In" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNg-iN-lwV">
+                                        <rect key="frame" x="0.0" y="60" width="353" height="50"/>
+                                        <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dVI-1u-8gz">
+                                        <rect key="frame" x="0.0" y="120" width="353" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in to access and message your loved ones." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hR3-O4-GlC">
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="17"/>
+                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="hR3-O4-GlC" secondAttribute="bottom" id="83m-DI-Iot"/>
+                                            <constraint firstItem="hR3-O4-GlC" firstAttribute="top" secondItem="dVI-1u-8gz" secondAttribute="top" id="Gbn-1A-GWk"/>
+                                            <constraint firstItem="hR3-O4-GlC" firstAttribute="centerX" secondItem="dVI-1u-8gz" secondAttribute="centerX" id="WJX-5w-kK3"/>
+                                            <constraint firstItem="hR3-O4-GlC" firstAttribute="width" secondItem="dVI-1u-8gz" secondAttribute="width" id="okS-5u-J8Q"/>
+                                        </constraints>
+                                    </view>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qVg-tb-qyQ">
+                                        <rect key="frame" x="0.0" y="180" width="353" height="50"/>
+                                        <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b3I-mk-hAC">
+                                        <rect key="frame" x="0.0" y="240" width="353" height="50"/>
+                                        <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="go" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BgJ-fu-iwY">
+                                <rect key="frame" x="20" y="403" width="353" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBn-Wh-OuK">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="40"/>
+                                        <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="14"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="a0L-Hp-9sG"/>
+                                    <constraint firstItem="NBn-Wh-OuK" firstAttribute="top" secondItem="BgJ-fu-iwY" secondAttribute="top" id="adu-9j-F2c"/>
+                                    <constraint firstAttribute="bottom" secondItem="NBn-Wh-OuK" secondAttribute="bottom" id="msv-4L-TXI"/>
+                                    <constraint firstItem="NBn-Wh-OuK" firstAttribute="width" secondItem="BgJ-fu-iwY" secondAttribute="width" id="qyi-I4-ubb"/>
+                                    <constraint firstItem="NBn-Wh-OuK" firstAttribute="centerX" secondItem="BgJ-fu-iwY" secondAttribute="centerX" id="yZw-eM-c44"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Sqi-mK-ZRV">
+                                <rect key="frame" x="20" y="443" width="353" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XsL-HZ-NhZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="yfM-ST-F2K"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Sign In" cornerStyle="large">
+                                            <fontDescription key="titleFontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="signInPressed:" destination="jOJ-e8-Dfe" eventType="touchUpInside" id="gU2-dP-P5U"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Km4-PV-sNr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uBo-j5-Qe2" firstAttribute="top" secondItem="Km4-PV-sNr" secondAttribute="top" id="0Xf-Ry-Nyd"/>
+                            <constraint firstItem="Sqi-mK-ZRV" firstAttribute="leading" secondItem="Km4-PV-sNr" secondAttribute="leading" constant="20" id="0pM-Ac-7kD"/>
+                            <constraint firstItem="Km4-PV-sNr" firstAttribute="trailing" secondItem="Sqi-mK-ZRV" secondAttribute="trailing" constant="20" id="4rI-Sy-y9w"/>
+                            <constraint firstItem="Sqi-mK-ZRV" firstAttribute="top" secondItem="BgJ-fu-iwY" secondAttribute="bottom" id="WQy-0z-Q8Y"/>
+                            <constraint firstItem="Km4-PV-sNr" firstAttribute="trailing" secondItem="BgJ-fu-iwY" secondAttribute="trailing" constant="20" id="Yw8-1b-yUr"/>
+                            <constraint firstItem="BgJ-fu-iwY" firstAttribute="leading" secondItem="Km4-PV-sNr" secondAttribute="leading" constant="20" id="bXF-BI-Qem"/>
+                            <constraint firstItem="Km4-PV-sNr" firstAttribute="trailing" secondItem="uBo-j5-Qe2" secondAttribute="trailing" constant="20" id="i3g-PW-EEK"/>
+                            <constraint firstItem="uBo-j5-Qe2" firstAttribute="leading" secondItem="Km4-PV-sNr" secondAttribute="leading" constant="20" id="sqQ-qU-LZX"/>
+                            <constraint firstItem="BgJ-fu-iwY" firstAttribute="top" secondItem="uBo-j5-Qe2" secondAttribute="bottom" constant="10" id="tJf-UG-UW3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5r4-TV-xBt"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="qVg-tb-qyQ" id="VPU-85-QL7"/>
+                        <outlet property="errorLabel" destination="NBn-Wh-OuK" id="VDA-iU-3KW"/>
+                        <outlet property="passwordTextField" destination="b3I-mk-hAC" id="gWa-Sa-uDP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kiH-ww-ujy" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1840" y="-353"/>
         </scene>
     </scenes>
     <designables>
