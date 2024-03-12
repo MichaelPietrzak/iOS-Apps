@@ -199,7 +199,13 @@
                             <constraint firstItem="c18-c1-Tmg" firstAttribute="top" secondItem="IN2-dQ-Q61" secondAttribute="bottom" id="vmf-Xp-FIj"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="dUj-cm-72g"/>
+                    <navigationItem key="navigationItem" id="dUj-cm-72g">
+                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="3gH-xt-fZH">
+                            <connections>
+                                <action selector="signOutPressed:" destination="yiK-kf-7ba" id="SIy-4n-WKY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="messageTextField" destination="OV1-ZY-PoY" id="yUm-pi-VR8"/>
                         <outlet property="tableView" destination="IN2-dQ-Q61" id="dbK-7f-Zq1"/>
