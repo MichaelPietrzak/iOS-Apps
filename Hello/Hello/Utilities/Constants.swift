@@ -9,8 +9,9 @@ import Foundation
 import UIKit
 
 enum Labels {
-    static let appName = "Hello 💬"
-    static let chatVC  = "ChatViewController"
+    static let appName        = "Hello 💬"
+    static let chatVC         = "ChatViewController"
+    static let cellIdentifier = "ReusableCell"
 }
 
 enum Fonts {
