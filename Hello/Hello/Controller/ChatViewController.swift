@@ -13,6 +13,12 @@ class ChatViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var messageTextField: UITextField!
     
+    var messages: [Message] = [
+        Message(sender: "1@2.com", body: "Hey!"),
+        Message(sender: "a@b.com", body: "Hello!"),
+        Message(sender: "1@2.com", body: "What's up!")
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
@@ -37,3 +43,4 @@ class ChatViewController: UIViewController {
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: Fonts.sfProRoundedBold, size: 20)!]
     }
 }
+
