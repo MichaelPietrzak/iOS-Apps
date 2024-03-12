@@ -24,7 +24,7 @@ class CreateAccountViewController: UIViewController {
                 if let e = error {
                     self.errorLabel.text = e.localizedDescription
                 } else {
-                    if let chatVC = self.storyboard?.instantiateViewController(withIdentifier: "chatViewController") {
+                    if let chatVC = self.storyboard?.instantiateViewController(withIdentifier: Labels.chatVC) {
                         self.navigationController?.pushViewController(chatVC, animated: true)
                     }
                 }

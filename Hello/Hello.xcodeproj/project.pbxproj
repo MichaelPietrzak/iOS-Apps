@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C09855A2BA0BE3A002FD685 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0985592BA0BE3A002FD685 /* Constants.swift */; };
 		4C3D20E82B9F6C04000D5146 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C3D20E72B9F6C04000D5146 /* GoogleService-Info.plist */; };
 		4C7B8CA32B9376CE00483B5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7B8CA22B9376CE00483B5A /* AppDelegate.swift */; };
 		4C7B8CA52B9376CE00483B5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7B8CA42B9376CE00483B5A /* SceneDelegate.swift */; };
@@ -118,6 +119,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C0985592BA0BE3A002FD685 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4C3D20E72B9F6C04000D5146 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4C7B8C9F2B9376CE00483B5A /* Hello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hello.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C7B8CA22B9376CE00483B5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -252,6 +254,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4C09855B2BA0BE47002FD685 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4C0985592BA0BE3A002FD685 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		4C7B8C962B9376CE00483B5A = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +283,7 @@
 		4C7B8CA12B9376CE00483B5A /* Hello */ = {
 			isa = PBXGroup;
 			children = (
+				4C09855B2BA0BE47002FD685 /* Utilities */,
 				4C7B8CB62B93776B00483B5A /* CustomFonts */,
 				4C7B8CA22B9376CE00483B5A /* AppDelegate.swift */,
 				4C7B8CA42B9376CE00483B5A /* SceneDelegate.swift */,
@@ -643,6 +654,7 @@
 				4CE9E6F62B937D1400434484 /* CreateAccountViewController.swift in Sources */,
 				4C7B8CA72B9376CE00483B5A /* WelcomeViewController.swift in Sources */,
 				4C7B8CA32B9376CE00483B5A /* AppDelegate.swift in Sources */,
+				4C09855A2BA0BE3A002FD685 /* Constants.swift in Sources */,
 				4CE9E6F82B937D3400434484 /* ChatViewController.swift in Sources */,
 				4C7B8CA52B9376CE00483B5A /* SceneDelegate.swift in Sources */,
 			);

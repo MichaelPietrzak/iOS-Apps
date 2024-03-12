@@ -15,10 +15,7 @@ class ChatViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        title = "Hello 💬"
-        navigationItem.hidesBackButton = true
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "SFProRounded-Bold", size: 20)!]
+        configure()
     }
     @IBAction func sendPressed(_ sender: UIButton) {
         
@@ -32,5 +29,11 @@ class ChatViewController: UIViewController {
         } catch let signOutError as NSError {
           print("Error signing out: %@", signOutError)
         }
+    }
+    
+    func configure() {
+        title = Labels.appName
+        navigationItem.hidesBackButton = true
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: Fonts.sfProRoundedBold, size: 20)!]
     }
 }

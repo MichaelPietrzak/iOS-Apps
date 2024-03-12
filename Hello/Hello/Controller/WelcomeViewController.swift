@@ -16,8 +16,11 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configure()
+    }
     
-        titleLabel.text = "Hello 💬"
+    func configure() {
+        titleLabel.text = Labels.appName
     }
 }
 
