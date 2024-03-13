@@ -21,8 +21,6 @@ class ChatViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.dataSource = self
-        tableView.register(UINib(nibName: Labels.cellNibName, bundle: nil), forCellReuseIdentifier: Labels.cellIdentifier)
         configure()
     }
     @IBAction func sendPressed(_ sender: UIButton) {
@@ -40,6 +38,8 @@ class ChatViewController: UIViewController {
     }
     
     func configure() {
+        tableView.dataSource = self
+        tableView.register(UINib(nibName: Labels.cellNibName, bundle: nil), forCellReuseIdentifier: Labels.cellIdentifier)
         title = Labels.appName
         navigationItem.hidesBackButton = true
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: Fonts.sfProRoundedBold, size: 20)!]
