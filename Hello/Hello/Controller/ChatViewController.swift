@@ -108,8 +108,6 @@ extension ChatViewController: UITableViewDataSource {
             cell.rightImageView.isHidden = true
             cell.messageBubble.backgroundColor = .systemGray4
         }
-        
-        
         return cell
     }
 }
