@@ -12,6 +12,7 @@ enum Labels {
     static let appName        = "Hello 💬"
     static let chatVC         = "ChatViewController"
     static let cellIdentifier = "ReusableCell"
+    static let cellNibName    = "MessageCell"
 }
 
 enum Fonts {
