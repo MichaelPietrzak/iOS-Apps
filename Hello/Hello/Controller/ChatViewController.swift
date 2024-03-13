@@ -16,16 +16,37 @@ class ChatViewController: UIViewController {
     
     let db = Firestore.firestore()
     
-    var messages: [Message] = [
-        Message(sender: "1@2.com", body: "Hey!"),
-        Message(sender: "a@b.com", body: "Hello!"),
-        Message(sender: "1@2.com", body: "What's up!")
-    ]
+    var messages: [Message] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
     }
+    
+    func loadMessage() {
+        messages = []
+        
+        db.collection(FStore.collectionName).getDocuments { (querySnapshot, error) in
+            if let e = error {
+                print("Issue retrieving data from Firestore, \(e) ")
+            } else {
+                if let snapshotDocuments = querySnapshot?.documents {
+                    for doc in snapshotDocuments {
+                        let data = doc.data()
+                        if let messageSender = data[FStore.senderField] as? String, let messageBody = data[FStore.bodyField] as? String {
+                            let newMessage = Message(sender: messageSender, body: messageBody)
+                            self.messages.append(newMessage)
+                            
+                            DispatchQueue.main.async {
+                                self.tableView.reloadData()
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
     @IBAction func sendPressed(_ sender: UIButton) {
         if let messageBody = messageTextField.text, let messageSender = Auth.auth().currentUser?.email {
             db.collection(FStore.collectionName).addDocument(data: [
@@ -54,6 +75,7 @@ class ChatViewController: UIViewController {
     func configure() {
         tableView.dataSource = self
         tableView.register(UINib(nibName: Labels.cellNibName, bundle: nil), forCellReuseIdentifier: Labels.cellIdentifier)
+        loadMessage()
         title = Labels.appName
         navigationItem.hidesBackButton = true
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: Fonts.sfProRoundedBold, size: 20)!]
