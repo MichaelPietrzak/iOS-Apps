@@ -8,11 +8,12 @@ iOS Apps created for self development and practice.
 - [Split Bill](#split-bill)
 - [Weather](#weather)
 - [Coin](#coin)
+- [Hello](#hello)
 
 <br />
 
 ## Split Bill
-Simple bill splitting, tip calculating app.
+Simple bill split, tip calculating app.
 
 <h3>Illustrations</h3
 
@@ -26,7 +27,7 @@ Simple bill splitting, tip calculating app.
 <br />
 
 ## Weather
-Weather app providing current location temperature as well as from any city in the world.
+Weather app provides current location temperature as well as from any city in the world.
 
 <h3>Illustrations</h3
 
@@ -52,7 +53,7 @@ Weather app providing current location temperature as well as from any city in t
 <br />
 
 ## Coin
-Coin app providing latest bitcoin price rates in different currencies.
+Coin app provides latest bitcoin price rates in different currencies.
 
 <h3>Illustrations</h3
 
@@ -70,3 +71,41 @@ Coin app providing latest bitcoin price rates in different currencies.
 - JSON Decoding
 - DispatchQueue for performance
 - Auto Layout for all iPhones
+
+<br />
+
+## Hello
+'Hello' chat app provides account creation, signing in/out and messaging with users in real time using Firebase database.
+
+<h3>Illustrations</h3
+
+[<img src="README_images/hello1.png" alt="Welcome screen" width="500"/>](README_images/hello1.png)
+[<img src="README_images/hello2.png" alt="Create Account screen" width="500"/>](README_images/hello2.png)
+[<img src="README_images/hello3.png" alt="Create Account - Validation screen" width="500"/>](README_images/hello3.png)
+[<img src="README_images/hello4.png" alt="Sign In screen" width="500"/>](README_images/hello4.png)
+[<img src="README_images/hello5.png" alt="Chat screen" width="500"/>](README_images/hello5.png)
+[<img src="README_images/hello6.png" alt="Chat - keyboard screen" width="500"/>](README_images/hello6.png)
+[<img src="README_images/hello7.png" alt="Light Mode screen" width="500"/>](README_images/hello7.png)
+
+<h3>Features</h3>
+
+- Screens: Welcome, Create Account, Sign In, Chat
+- Configuration of Cocoapods
+- Logo animation on Welcome Screen using CLTypingLabel Pod
+- Account creation and login using email and password [Validation from Firebase with red label]
+- Using Firebase to store chat data [login credentials, chat conversation] : http://firebase.google.com
+- Configuration of Swift Package Manager
+- Managing keyboard for messaging using IQKeyboardManagerSwift from SPM
+- Implementation of Sign Out to Welcome screen
+- Database management and security rules config in Firebase Console
+- Custom Fonts and colors as per Apple Human Guidelines
+- Implementation of chat empty message validation when sent
+- Tested with 2 accounts on 2 separate devices with simple chat [Images in ReadMe]
+- Dark Mode Support
+- Project structure based on MVC
+- DispatchQueue for performance
+- Auto Layout for all iPhones
+
+<br/>
+
+**Please note that this project requires own Firebase configuration with GoogleService-info file**
