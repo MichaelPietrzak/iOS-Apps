@@ -17,7 +17,8 @@ Simple bill split, tip calculating app.
 
 <h3>Illustrations</h3
 
-![Calculate screen](README_images/splitBill1.png) ![Recalculate screen](README_images/splitBill2.png)
+[<img src="README_images/splitBill1.png" alt="Calculate screen" width="400"/>](README_images/splitBill1.png)
+[<img src="README_images/splitBill2.png" alt="Recalculate screen" width="400"/>](README_images/splitBill2.png)
 
 <h3>Features</h3>
 
@@ -31,7 +32,9 @@ Weather app provides current location temperature as well as from any city in th
 
 <h3>Illustrations</h3
 
-![User permission](README_images/weather1.png) ![My Location screen](README_images/weather2.png) ![New Location screen](README_images/weather3.png)
+[<img src="README_images/weather1.png" alt="User permission" width="400"/>](README_images/weather1.png)
+[<img src="README_images/weather2.png" alt="My Location screen" width="400"/>](README_images/weather2.png)
+[<img src="README_images/weather3.png" alt="New Location screen" width="400"/>](README_images/weather3.png)
 
 <h3>Features</h3>
 
@@ -57,7 +60,7 @@ Coin app provides latest bitcoin price rates in different currencies.
 
 <h3>Illustrations</h3
 
-![Coin screen](README_images/coin.png)
+[<img src="README_images/coin.png" alt="Coin screen" width="400"/>](README_images/coin.png)
 
 <h3>Features</h3>
 
@@ -79,13 +82,13 @@ Coin app provides latest bitcoin price rates in different currencies.
 
 <h3>Illustrations</h3
 
-[<img src="README_images/hello1.png" alt="Welcome screen" width="500"/>](README_images/hello1.png)
-[<img src="README_images/hello2.png" alt="Create Account screen" width="500"/>](README_images/hello2.png)
-[<img src="README_images/hello3.png" alt="Create Account - Validation screen" width="500"/>](README_images/hello3.png)
-[<img src="README_images/hello4.png" alt="Sign In screen" width="500"/>](README_images/hello4.png)
-[<img src="README_images/hello5.png" alt="Chat screen" width="500"/>](README_images/hello5.png)
-[<img src="README_images/hello6.png" alt="Chat - keyboard screen" width="500"/>](README_images/hello6.png)
-[<img src="README_images/hello7.png" alt="Light Mode screen" width="500"/>](README_images/hello7.png)
+[<img src="README_images/hello1.png" alt="Welcome screen" width="400"/>](README_images/hello1.png)
+[<img src="README_images/hello2.png" alt="Create Account screen" width="400"/>](README_images/hello2.png)
+[<img src="README_images/hello3.png" alt="Create Account - Validation screen" width="400"/>](README_images/hello3.png)
+[<img src="README_images/hello4.png" alt="Sign In screen" width="400"/>](README_images/hello4.png)
+[<img src="README_images/hello5.png" alt="Chat screen" width="400"/>](README_images/hello5.png)
+[<img src="README_images/hello6.png" alt="Chat - keyboard screen" width="400"/>](README_images/hello6.png)
+[<img src="README_images/hello7.png" alt="Light Mode screen" width="400"/>](README_images/hello7.png)
 
 <h3>Features</h3>
 
