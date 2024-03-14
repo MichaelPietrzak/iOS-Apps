@@ -10,9 +10,10 @@ import FirebaseAuth
 import FirebaseFirestore
 
 class ChatViewController: UIViewController {
-
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var messageTextField: UITextField!
+    @IBOutlet weak var sendButton: UIButton!
     
     let db = Firestore.firestore()
     
@@ -74,17 +75,28 @@ class ChatViewController: UIViewController {
             navigationController?.popToRootViewController(animated: true)
             
         } catch let signOutError as NSError {
-          print("Error signing out: %@", signOutError)
+            print("Error signing out: %@", signOutError)
         }
     }
     
     func configure() {
+        messageTextField.addTarget(self, action: #selector(editingChanged), for: UIControl.Event.editingChanged)
         tableView.dataSource = self
         tableView.register(UINib(nibName: Labels.cellNibName, bundle: nil), forCellReuseIdentifier: Labels.cellIdentifier)
         loadMessage()
         title = Labels.appName
         navigationItem.hidesBackButton = true
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: Fonts.sfProRoundedBold, size: 20)!]
+    }
+    
+    @objc func editingChanged(sender: UITextField) {
+        if sender.text?.trimmingCharacters(in: .whitespaces) == "" {
+            sendButton.isUserInteractionEnabled = false
+            sendButton.isEnabled = false
+        } else {
+            sendButton.isUserInteractionEnabled = true
+            sendButton.isEnabled = true
+        }
     }
 }
 
