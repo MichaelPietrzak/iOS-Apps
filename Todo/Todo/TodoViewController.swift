@@ -15,6 +15,8 @@ class TodoViewController: UITableViewController {
         super.viewDidLoad()
         print(itemArr)
     }
+    
+    //MARK: - UITableViewDataSource
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return itemArr.count
@@ -27,6 +29,8 @@ class TodoViewController: UITableViewController {
         
         return cell
     }
+    
+    //MARK: - UITableViewDelegate
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
