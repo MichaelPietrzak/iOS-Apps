@@ -11,9 +11,17 @@ class TodoViewController: UITableViewController {
     
     var itemArr = ["Buy apples", "Finish assignment", "Clean the bathroom"]
     
+    let defaults = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(itemArr)
+        configure()
+    }
+    
+    func configure() {
+        if let items = defaults.array(forKey: "TodoArr") as? [String] {
+            itemArr = items
+        }
     }
     
     //MARK: - UITableViewDataSource
@@ -56,8 +64,7 @@ class TodoViewController: UITableViewController {
         let action = UIAlertAction(title: "Add Item", style: .default) { (action) in
             if let addText = textField.text {
                 self.itemArr.append(addText)
-            } else {
-                print("Invalid item")
+                self.defaults.set(self.itemArr, forKey: "TodoArray")
             }
             self.tableView.reloadData()
         }
