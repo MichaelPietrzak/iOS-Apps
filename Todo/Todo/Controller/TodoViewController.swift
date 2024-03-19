@@ -73,7 +73,7 @@ class TodoViewController: UITableViewController {
             let data = try encoder.encode(self.itemArr)
             try data.write(to: self.dataFilePath!)
         } catch {
-            print("Error encoding item arr, \(error)")
+            print("Error encoding item array, \(error)")
         }
     }
     
