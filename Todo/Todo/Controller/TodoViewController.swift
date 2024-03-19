@@ -19,7 +19,6 @@ class TodoViewController: UITableViewController {
     }
     
     func configure() {
-        
         let newItem = Item()
         newItem.title = "Buy apples"
         itemArr.append(newItem)
@@ -45,28 +44,16 @@ class TodoViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TodoItemCell", for: indexPath)
-        
-        cell.textLabel?.text = itemArr[indexPath.row].title
-        
-        if itemArr[indexPath.row].done == true {
-            cell.accessoryType = .checkmark
-        } else {
-            cell.accessoryType = .none
-        }
-            
+        let item = itemArr[indexPath.row]
+        cell.textLabel?.text = item.title
+        cell.accessoryType = item.done ? .checkmark : .none
         return cell
     }
     
     //MARK: - UITableViewDelegate
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        if itemArr[indexPath.row].done == false {
-            itemArr[indexPath.row].done = true
-        } else {
-            itemArr[indexPath.row].done = false
-        }
-        
+        itemArr[indexPath.row].done = !itemArr[indexPath.row].done
         tableView.reloadData()
         tableView.deselectRow(at: indexPath, animated: true)
     }
@@ -74,19 +61,13 @@ class TodoViewController: UITableViewController {
     //MARK: - Add New Items
     
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
-        
         var textField = UITextField()
-        
         let alert = UIAlertController(title: "Add New Todo Item", message: "", preferredStyle: .alert)
-        
         let action = UIAlertAction(title: "Add Item", style: .default) { (action) in
-            
             let newItem = Item()
             newItem.title = textField.text!
-            
             self.itemArr.append(newItem)
             self.defaults.set(self.itemArr, forKey: "TodoArray")
-            
             self.tableView.reloadData()
         }
         alert.addTextField { (alertTextField) in
