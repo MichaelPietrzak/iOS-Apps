@@ -205,15 +205,39 @@
 			isa = PBXGroup;
 			children = (
 				4C43101C2BA39B42004BFE30 /* CustomsFonts */,
+				4CE5404D2BA9D16000280A3F /* Model */,
+				4CE5404B2BA9D13C00280A3F /* View */,
+				4CE5404C2BA9D14700280A3F /* Controller */,
 				4CC6A9A12BA390A50025F5DD /* AppDelegate.swift */,
 				4CC6A9A32BA390A50025F5DD /* SceneDelegate.swift */,
-				4CC6A9A52BA390A50025F5DD /* TodoViewController.swift */,
-				4CC6A9A72BA390A50025F5DD /* Main.storyboard */,
 				4CC6A9AA2BA390A60025F5DD /* Assets.xcassets */,
 				4CC6A9AC2BA390A60025F5DD /* LaunchScreen.storyboard */,
 				4CC6A9AF2BA390A60025F5DD /* Info.plist */,
 			);
 			path = Todo;
+			sourceTree = "<group>";
+		};
+		4CE5404B2BA9D13C00280A3F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4CC6A9A72BA390A50025F5DD /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4CE5404C2BA9D14700280A3F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4CC6A9A52BA390A50025F5DD /* TodoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4CE5404D2BA9D16000280A3F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
