@@ -9,7 +9,7 @@ import UIKit
 
 class TodoViewController: UITableViewController {
     
-    var itemArr = ["Buy apples", "Finish assignment", "Clean the bathroom"]
+    var itemArr = [Item]()
     
     let defaults = UserDefaults.standard
     
@@ -19,9 +19,22 @@ class TodoViewController: UITableViewController {
     }
     
     func configure() {
-        if let items = defaults.array(forKey: "TodoArr") as? [String] {
-            itemArr = items
-        }
+        
+        let newItem = Item()
+        newItem.title = "Buy apples"
+        itemArr.append(newItem)
+        
+        let newItem2 = Item()
+        newItem2.title = "Finish assignment"
+        itemArr.append(newItem2)
+        
+        let newItem3 = Item()
+        newItem3.title = "Clean the bathroom"
+        itemArr.append(newItem3)
+        
+//        if let items = defaults.array(forKey: "TodoArr") as? [String] {
+//            itemArr = items
+//        }
     }
     
     //MARK: - UITableViewDataSource
@@ -33,7 +46,7 @@ class TodoViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TodoItemCell", for: indexPath)
         
-        cell.textLabel?.text = itemArr[indexPath.row]
+        cell.textLabel?.text = itemArr[indexPath.row].title
         
         return cell
     }
@@ -62,10 +75,13 @@ class TodoViewController: UITableViewController {
         let alert = UIAlertController(title: "Add New Todo Item", message: "", preferredStyle: .alert)
         
         let action = UIAlertAction(title: "Add Item", style: .default) { (action) in
-            if let addText = textField.text {
-                self.itemArr.append(addText)
-                self.defaults.set(self.itemArr, forKey: "TodoArray")
-            }
+            
+            let newItem = Item()
+            newItem.title = textField.text!
+            
+            self.itemArr.append(newItem)
+            self.defaults.set(self.itemArr, forKey: "TodoArray")
+            
             self.tableView.reloadData()
         }
         alert.addTextField { (alertTextField) in
