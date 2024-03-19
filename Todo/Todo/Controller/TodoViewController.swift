@@ -19,21 +19,7 @@ class TodoViewController: UITableViewController {
     }
     
     func configure() {
-        let newItem = Item()
-        newItem.title = "Buy apples"
-        itemArr.append(newItem)
-        
-        let newItem2 = Item()
-        newItem2.title = "Finish assignment"
-        itemArr.append(newItem2)
-        
-        let newItem3 = Item()
-        newItem3.title = "Clean the bathroom"
-        itemArr.append(newItem3)
-        
-//        if let items = defaults.array(forKey: "TodoArr") as? [Item] {
-//            itemArr = items
-//        }
+        loadItems()
     }
     
     //MARK: - UITableViewDataSource
@@ -79,6 +65,8 @@ class TodoViewController: UITableViewController {
         present(alert, animated: true, completion: nil)
     }
     
+    //MARK: - Save Items
+    
     func saveItems() {
         let encoder = PropertyListEncoder()
         do {
@@ -86,6 +74,19 @@ class TodoViewController: UITableViewController {
             try data.write(to: self.dataFilePath!)
         } catch {
             print("Error encoding item arr, \(error)")
+        }
+    }
+    
+    //MARK: - Load Items
+    
+    func loadItems() {
+        if let data = try? Data(contentsOf: dataFilePath!) {
+            let decoder = PropertyListDecoder()
+            do {
+                itemArr = try decoder.decode([Item].self, from: data)
+            } catch {
+                print("Error decoding item array, \(error)")
+            }
         }
     }
 }
