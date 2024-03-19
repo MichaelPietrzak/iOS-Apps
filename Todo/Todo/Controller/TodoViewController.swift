@@ -48,6 +48,12 @@ class TodoViewController: UITableViewController {
         
         cell.textLabel?.text = itemArr[indexPath.row].title
         
+        if itemArr[indexPath.row].done == true {
+            cell.accessoryType = .checkmark
+        } else {
+            cell.accessoryType = .none
+        }
+            
         return cell
     }
     
@@ -55,14 +61,13 @@ class TodoViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let selectedCell = tableView.cellForRow(at: indexPath)
-        
-        if selectedCell?.accessoryType == .checkmark {
-            selectedCell?.accessoryType = .none
+        if itemArr[indexPath.row].done == false {
+            itemArr[indexPath.row].done = true
         } else {
-            selectedCell?.accessoryType = .checkmark
+            itemArr[indexPath.row].done = false
         }
-
+        
+        tableView.reloadData()
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
