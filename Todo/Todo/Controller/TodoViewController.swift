@@ -40,9 +40,14 @@ class TodoViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        //MARK: - Delete Items
+        
+        context.delete(itemArr[indexPath.row])
+        itemArr.remove(at: indexPath.row)
+        
         //MARK: - Update Items
         
-        itemArr[indexPath.row].done = !itemArr[indexPath.row].done
+        // itemArr[indexPath.row].done = !itemArr[indexPath.row].done
         saveItems()
         
         tableView.reloadData()
