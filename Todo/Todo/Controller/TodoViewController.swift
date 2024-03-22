@@ -91,8 +91,7 @@ class TodoViewController: UITableViewController {
     
     //MARK: - Load Items
     
-    func loadItems() {
-        let request: NSFetchRequest<Item> = Item.fetchRequest()
+    func loadItems(with request: NSFetchRequest<Item> = Item.fetchRequest()) {
         do {
             itemArr = try context.fetch(request)
         } catch {
@@ -108,11 +107,6 @@ extension TodoViewController: UISearchBarDelegate {
         let request: NSFetchRequest<Item> = Item.fetchRequest()
         request.predicate = NSPredicate(format: "title CONTAINS[cd] %@", searchBar.text!)
         request.sortDescriptors = [NSSortDescriptor(key: "title", ascending: true)]
-        do {
-            itemArr = try context.fetch(request)
-        } catch {
-            print("Error fetching data from context \(error)")
-        }
-        tableView.reloadData()
+        loadItems(with: request)
     }
 }
