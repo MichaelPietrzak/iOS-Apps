@@ -10,6 +10,8 @@ import CoreData
 
 class TodoViewController: UITableViewController {
     
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     var itemArr = [Item]()
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         
@@ -19,6 +21,7 @@ class TodoViewController: UITableViewController {
     }
     
     func configure() {
+        searchBar.delegate = self
         loadItems()
     }
     
@@ -42,12 +45,12 @@ class TodoViewController: UITableViewController {
         
         //MARK: - Delete Items
         
-        context.delete(itemArr[indexPath.row])
-        itemArr.remove(at: indexPath.row)
+//        context.delete(itemArr[indexPath.row])
+//        itemArr.remove(at: indexPath.row)
         
         //MARK: - Update Items
         
-        // itemArr[indexPath.row].done = !itemArr[indexPath.row].done
+        itemArr[indexPath.row].done = !itemArr[indexPath.row].done
         saveItems()
         
         tableView.reloadData()
@@ -98,3 +101,18 @@ class TodoViewController: UITableViewController {
     }
 }
 
+//MARK: - UISearchBarDelegate
+
+extension TodoViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        let request: NSFetchRequest<Item> = Item.fetchRequest()
+        request.predicate = NSPredicate(format: "title CONTAINS[cd] %@", searchBar.text!)
+        request.sortDescriptors = [NSSortDescriptor(key: "title", ascending: true)]
+        do {
+            itemArr = try context.fetch(request)
+        } catch {
+            print("Error fetching data from context \(error)")
+        }
+        tableView.reloadData()
+    }
+}
