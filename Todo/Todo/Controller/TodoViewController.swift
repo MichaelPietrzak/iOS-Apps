@@ -97,6 +97,7 @@ class TodoViewController: UITableViewController {
         } catch {
             print("Error fetching data from context \(error)")
         }
+        tableView.reloadData()
     }
 }
 
