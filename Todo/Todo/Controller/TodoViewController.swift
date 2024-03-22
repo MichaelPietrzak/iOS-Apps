@@ -13,6 +13,11 @@ class TodoViewController: UITableViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     
     var itemArr = [Item]()
+    var selectedCategory: Category? {
+        didSet {
+            loadItems()
+        }
+    }
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         
     override func viewDidLoad() {
@@ -22,7 +27,6 @@ class TodoViewController: UITableViewController {
     
     func configure() {
         searchBar.delegate = self
-        loadItems()
     }
     
     //MARK: - UITableViewDataSource
@@ -67,6 +71,7 @@ class TodoViewController: UITableViewController {
             let newItem = Item(context: self.context)
             newItem.title = textField.text!
             newItem.done = false
+            newItem.parentCategory = self.selectedCategory
             self.itemArr.append(newItem)
             self.saveItems()
         }
