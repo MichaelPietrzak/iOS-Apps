@@ -8,6 +8,44 @@
     </dependencies>
     <scenes>
         <!--Todo-->
+        <scene sceneID="1JP-6g-UdE">
+            <objects>
+                <tableViewController id="06G-Hv-SGt" customClass="CategoryViewController" customModule="Todo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="I2e-Ux-AWD">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="f0Q-3U-sNI" customClass="CategoryCell">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f0Q-3U-sNI" id="r3T-z7-VCh">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="06G-Hv-SGt" id="lAF-TU-MVy"/>
+                            <outlet property="delegate" destination="06G-Hv-SGt" id="mQe-2Q-iGh"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Todo" id="Ffl-3E-i18">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="vgX-3v-c7v">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="06G-Hv-SGt" id="YEa-KP-A7U"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="QBk-Fg-dRv" kind="show" identifier="goToItems" id="UFj-Iz-Ayp"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uAX-AE-BvZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="888" y="-7"/>
+        </scene>
+        <!--Items-->
         <scene sceneID="xYh-UZ-sHl">
             <objects>
                 <tableViewController id="QBk-Fg-dRv" customClass="TodoViewController" customModule="Todo" customModuleProvider="target" sceneMemberID="viewController">
@@ -38,7 +76,7 @@
                             <outlet property="delegate" destination="QBk-Fg-dRv" id="r5n-ov-YvL"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todo" id="d7W-h4-gMT">
+                    <navigationItem key="navigationItem" title="Items" id="d7W-h4-gMT">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="aFG-Lv-QHW">
                             <connections>
                                 <action selector="addButtonPressed:" destination="QBk-Fg-dRv" id="Y7t-Mj-Lb1"/>
@@ -51,7 +89,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QRs-07-G2G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1037.4045801526718" y="-7.042253521126761"/>
+            <point key="canvasLocation" x="1671" y="-7"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8KB-7x-IsI">
@@ -64,7 +102,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="QBk-Fg-dRv" kind="relationship" relationship="rootViewController" id="pha-KP-jlE"/>
+                        <segue destination="06G-Hv-SGt" kind="relationship" relationship="rootViewController" id="W47-k6-mWw"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="whO-ap-J1U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
