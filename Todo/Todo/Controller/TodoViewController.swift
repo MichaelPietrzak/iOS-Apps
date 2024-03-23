@@ -27,6 +27,7 @@ class TodoViewController: UITableViewController {
     
     func configure() {
         searchBar.delegate = self
+        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
     }
     
     //MARK: - UITableViewDataSource
@@ -47,11 +48,6 @@ class TodoViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        //MARK: - Delete Items
-        
-//        context.delete(itemArr[indexPath.row])
-//        itemArr.remove(at: indexPath.row)
-        
         //MARK: - Update Items
         
         itemArr[indexPath.row].done = !itemArr[indexPath.row].done
@@ -59,6 +55,16 @@ class TodoViewController: UITableViewController {
         
         tableView.reloadData()
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    //MARK: - Delete Items
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            context.delete(itemArr[indexPath.row])
+            itemArr.remove(at: indexPath.row)
+            tableView.reloadData()
+        }
     }
     
     //MARK: - Add New Items

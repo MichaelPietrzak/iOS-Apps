@@ -33,7 +33,7 @@ class CategoryViewController: UITableViewController {
         let item = categories[indexPath.row]
         cell.textLabel?.text = item.name
         return cell
-    }
+    } 
     
     //MARK: - UITableViewDelegate
     
