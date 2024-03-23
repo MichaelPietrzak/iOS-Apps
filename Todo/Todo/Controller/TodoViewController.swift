@@ -27,11 +27,13 @@ class TodoViewController: UITableViewController {
     
     func configure() {
         searchBar.delegate = self
+        
+        /// Core Data - Data Model file Path
         print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
     }
     
     //MARK: - UITableViewDataSource
-
+ 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return itemArr.count
     }
@@ -41,6 +43,7 @@ class TodoViewController: UITableViewController {
         let item = itemArr[indexPath.row]
         cell.textLabel?.text = item.title
         cell.accessoryType = item.done ? .checkmark : .none
+        cell.tintColor = .systemYellow
         return cell
     }
     
