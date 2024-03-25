@@ -75,7 +75,7 @@ class TodoViewController: UITableViewController {
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
         var textField = UITextField()
         let alert = UIAlertController(title: Alert.itemTitle, message: "", preferredStyle: .alert)
-        let action = UIAlertAction(title: Alert.actionTitle, style: .default) { (action) in
+        let addAction = UIAlertAction(title: Alert.actionAdd, style: .default) { (action) in
             
             let newItem = Item(context: self.context)
             newItem.title = textField.text!
@@ -84,11 +84,13 @@ class TodoViewController: UITableViewController {
             self.itemArr.append(newItem)
             self.saveItems()
         }
+        let cancelAction = UIAlertAction(title: Alert.actionCancel, style: .cancel)
         alert.addTextField { (alertTextField) in
             alertTextField.placeholder = Alert.itemPlaceholder
             textField = alertTextField
         }
-        alert.addAction(action)
+        alert.addAction(addAction)
+        alert.addAction(cancelAction)
         present(alert, animated: true, completion: nil)
     }
     
