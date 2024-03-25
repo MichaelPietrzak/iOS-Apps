@@ -207,6 +207,17 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		4CA60B812BB1C97B00D6F991 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4CA60B562BB1992500D6F991 /* ItemCell.swift */,
+				4CA60B572BB1992500D6F991 /* ItemCell.xib */,
+				4CA60B5A2BB1C1FA00D6F991 /* CategoryCell.swift */,
+				4CA60B5B2BB1C1FA00D6F991 /* CategoryCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		4CC6A9952BA390A50025F5DD = {
 			isa = PBXGroup;
 			children = (
@@ -244,10 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				4CC6A9A72BA390A50025F5DD /* Main.storyboard */,
-				4CA60B562BB1992500D6F991 /* ItemCell.swift */,
-				4CA60B572BB1992500D6F991 /* ItemCell.xib */,
-				4CA60B5A2BB1C1FA00D6F991 /* CategoryCell.swift */,
-				4CA60B5B2BB1C1FA00D6F991 /* CategoryCell.xib */,
+				4CA60B812BB1C97B00D6F991 /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
