@@ -46,6 +46,7 @@
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" systemColor="systemGray6Color"/>
                 <constraints>
                     <constraint firstItem="vhG-ZS-MpS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="4cE-OZ-X5m"/>
                     <constraint firstItem="vhG-ZS-MpS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="GyI-qY-xfv"/>

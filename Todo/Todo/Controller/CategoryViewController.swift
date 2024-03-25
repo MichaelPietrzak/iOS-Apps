@@ -20,6 +20,7 @@ class CategoryViewController: UITableViewController {
     
     func configure() {
         loadCategories()
+        tableView.register(UINib(nibName: Labels.categoryCell, bundle: nil), forCellReuseIdentifier: Labels.categoryCell)
     }
     
     //MARK: - UITableViewDataSource
@@ -29,9 +30,9 @@ class CategoryViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: Labels.categoryCell, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: Labels.categoryCell, for: indexPath) as! CategoryCell
         let item = categories[indexPath.row]
-        cell.textLabel?.text = item.name
+        cell.titleLabel.text = item.name
         return cell
     } 
     

@@ -59,6 +59,8 @@
 		4CA60B522BB18E3300D6F991 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA60B512BB18E3300D6F991 /* Constants.swift */; };
 		4CA60B582BB1992500D6F991 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA60B562BB1992500D6F991 /* ItemCell.swift */; };
 		4CA60B592BB1992500D6F991 /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CA60B572BB1992500D6F991 /* ItemCell.xib */; };
+		4CA60B5C2BB1C1FA00D6F991 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA60B5A2BB1C1FA00D6F991 /* CategoryCell.swift */; };
+		4CA60B5D2BB1C1FA00D6F991 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CA60B5B2BB1C1FA00D6F991 /* CategoryCell.xib */; };
 		4CC6A9A22BA390A50025F5DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC6A9A12BA390A50025F5DD /* AppDelegate.swift */; };
 		4CC6A9A42BA390A50025F5DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC6A9A32BA390A50025F5DD /* SceneDelegate.swift */; };
 		4CC6A9A62BA390A50025F5DD /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC6A9A52BA390A50025F5DD /* TodoViewController.swift */; };
@@ -120,6 +122,8 @@
 		4CA60B512BB18E3300D6F991 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4CA60B562BB1992500D6F991 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		4CA60B572BB1992500D6F991 /* ItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
+		4CA60B5A2BB1C1FA00D6F991 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		4CA60B5B2BB1C1FA00D6F991 /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
 		4CC6A99E2BA390A50025F5DD /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CC6A9A12BA390A50025F5DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CC6A9A32BA390A50025F5DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -242,6 +246,8 @@
 				4CC6A9A72BA390A50025F5DD /* Main.storyboard */,
 				4CA60B562BB1992500D6F991 /* ItemCell.swift */,
 				4CA60B572BB1992500D6F991 /* ItemCell.xib */,
+				4CA60B5A2BB1C1FA00D6F991 /* CategoryCell.swift */,
+				4CA60B5B2BB1C1FA00D6F991 /* CategoryCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -364,6 +370,7 @@
 				4C4310642BA39BDC004BFE30 /* SF-Pro-Display-Medium.otf in Resources */,
 				4C4310612BA39BDC004BFE30 /* SF-Pro-Text-SemiboldItalic.otf in Resources */,
 				4C4310722BA39BDC004BFE30 /* SF-Pro-Rounded-Bold.otf in Resources */,
+				4CA60B5D2BB1C1FA00D6F991 /* CategoryCell.xib in Resources */,
 				4C4310702BA39BDC004BFE30 /* SF-Pro-Display-Semibold.otf in Resources */,
 				4C4310622BA39BDC004BFE30 /* SF-Pro-Display-Bold.otf in Resources */,
 				4CC6A9A92BA390A50025F5DD /* Main.storyboard in Resources */,
@@ -385,6 +392,7 @@
 				4C669F8B2BAD88680014F770 /* CategoryViewController.swift in Sources */,
 				4CC6A9A62BA390A50025F5DD /* TodoViewController.swift in Sources */,
 				4C8C03642BAA38D600FA5D2D /* Data.xcdatamodeld in Sources */,
+				4CA60B5C2BB1C1FA00D6F991 /* CategoryCell.swift in Sources */,
 				4CC6A9A22BA390A50025F5DD /* AppDelegate.swift in Sources */,
 				4CA60B582BB1992500D6F991 /* ItemCell.swift in Sources */,
 				4CC6A9A42BA390A50025F5DD /* SceneDelegate.swift in Sources */,

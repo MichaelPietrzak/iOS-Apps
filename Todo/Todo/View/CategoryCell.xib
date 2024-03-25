@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Rounded-Semibold.otf">
+            <string>SFProRounded-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" id="7bV-7Z-stN" customClass="CategoryCell" customModule="Todo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7bV-7Z-stN" id="Nj3-95-lkz">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oik-sd-Dl4">
+                        <rect key="frame" x="8" y="0.0" width="304" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uvm-dq-r1Z">
+                                <rect key="frame" x="16.000000000000004" y="10" width="41.333333333333343" height="24"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="Uvm-dq-r1Z" firstAttribute="top" secondItem="oik-sd-Dl4" secondAttribute="top" constant="10" id="IT6-1l-aOz"/>
+                            <constraint firstAttribute="bottom" secondItem="Uvm-dq-r1Z" secondAttribute="bottom" constant="10" id="pfb-dM-KWk"/>
+                            <constraint firstItem="Uvm-dq-r1Z" firstAttribute="leading" secondItem="oik-sd-Dl4" secondAttribute="leading" constant="16" id="tlN-YH-DtK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                <constraints>
+                    <constraint firstItem="oik-sd-Dl4" firstAttribute="top" secondItem="Nj3-95-lkz" secondAttribute="top" id="JI7-pM-NwS"/>
+                    <constraint firstAttribute="bottom" secondItem="oik-sd-Dl4" secondAttribute="bottom" id="LMC-vE-mQ8"/>
+                    <constraint firstItem="oik-sd-Dl4" firstAttribute="leading" secondItem="Nj3-95-lkz" secondAttribute="leading" constant="8" id="REC-kI-1T4"/>
+                    <constraint firstAttribute="trailing" secondItem="oik-sd-Dl4" secondAttribute="trailing" constant="8" id="vbF-oM-TG0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="lcp-Pz-nRL"/>
+            <connections>
+                <outlet property="cellView" destination="oik-sd-Dl4" id="p4z-mg-W9x"/>
+                <outlet property="titleLabel" destination="Uvm-dq-r1Z" id="dtp-Sr-BPI"/>
+            </connections>
+            <point key="canvasLocation" x="94.656488549618317" y="20.422535211267608"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
