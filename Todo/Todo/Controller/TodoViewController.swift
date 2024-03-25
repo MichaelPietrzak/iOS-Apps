@@ -30,6 +30,7 @@ class TodoViewController: UITableViewController {
         
         /// Core Data - Data Model file Path
         print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
+        tableView.register(UINib(nibName: Labels.itemCell, bundle: nil), forCellReuseIdentifier: Labels.itemCell)
     }
     
     //MARK: - UITableViewDataSource
@@ -39,10 +40,14 @@ class TodoViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: Labels.itemCell, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: Labels.itemCell, for: indexPath) as! ItemCell
         let item = itemArr[indexPath.row]
-        cell.textLabel?.text = item.title
-        cell.accessoryType = item.done ? .checkmark : .none
+        cell.titleLabel.text = item.title
+        if item.done {
+            cell.checkmarkImage.isHidden = false
+        } else {
+            cell.checkmarkImage.isHidden = true
+        }
         cell.tintColor = .systemYellow
         return cell
     }

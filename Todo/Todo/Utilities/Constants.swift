@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 enum Labels {
-    static let itemCell     = "TodoItemCell"
+    static let itemCell     = "ItemCell"
     static let categoryCell = "CategoryCell"
     static let goToItems    = "goToItems"
 }
