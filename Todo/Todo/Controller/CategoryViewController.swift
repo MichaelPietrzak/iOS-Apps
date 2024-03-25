@@ -29,7 +29,7 @@ class CategoryViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: Labels.categoryCell, for: indexPath)
         let item = categories[indexPath.row]
         cell.textLabel?.text = item.name
         return cell
@@ -38,7 +38,7 @@ class CategoryViewController: UITableViewController {
     //MARK: - UITableViewDelegate
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "goToItems", sender: self)
+        performSegue(withIdentifier: Labels.goToItems, sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -50,8 +50,8 @@ class CategoryViewController: UITableViewController {
     
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
         var textField = UITextField()
-        let alert = UIAlertController(title: "Add New Category", message: "", preferredStyle: .alert)
-        let action = UIAlertAction(title: "Add", style: .default) { (action) in
+        let alert = UIAlertController(title: Alert.categoryTitle, message: "", preferredStyle: .alert)
+        let action = UIAlertAction(title: Alert.actionTitle, style: .default) { (action) in
             
             let newCategory = Category(context: self.context)
             newCategory.name = textField.text!
@@ -59,7 +59,7 @@ class CategoryViewController: UITableViewController {
             self.saveCategories()
         }
         alert.addTextField { (alertTextField) in
-            alertTextField.placeholder = "Add a new category"
+            alertTextField.placeholder = Alert.categoryPlaceholder
             textField = alertTextField
         }
         alert.addAction(action)

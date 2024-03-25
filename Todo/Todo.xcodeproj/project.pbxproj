@@ -56,6 +56,7 @@
 		4C43107A2BA39BDC004BFE30 /* SF-Pro-Display-UltralightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C43104B2BA39BDC004BFE30 /* SF-Pro-Display-UltralightItalic.otf */; };
 		4C669F8B2BAD88680014F770 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C669F8A2BAD88680014F770 /* CategoryViewController.swift */; };
 		4C8C03642BAA38D600FA5D2D /* Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C8C03622BAA38D600FA5D2D /* Data.xcdatamodeld */; };
+		4CA60B522BB18E3300D6F991 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA60B512BB18E3300D6F991 /* Constants.swift */; };
 		4CC6A9A22BA390A50025F5DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC6A9A12BA390A50025F5DD /* AppDelegate.swift */; };
 		4CC6A9A42BA390A50025F5DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC6A9A32BA390A50025F5DD /* SceneDelegate.swift */; };
 		4CC6A9A62BA390A50025F5DD /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC6A9A52BA390A50025F5DD /* TodoViewController.swift */; };
@@ -114,6 +115,7 @@
 		4C43104B2BA39BDC004BFE30 /* SF-Pro-Display-UltralightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-UltralightItalic.otf"; sourceTree = "<group>"; };
 		4C669F8A2BAD88680014F770 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		4C8C03632BAA38D600FA5D2D /* Data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Data.xcdatamodel; sourceTree = "<group>"; };
+		4CA60B512BB18E3300D6F991 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4CC6A99E2BA390A50025F5DD /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CC6A9A12BA390A50025F5DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CC6A9A32BA390A50025F5DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -189,6 +191,14 @@
 			path = CustomsFonts;
 			sourceTree = "<group>";
 		};
+		4CA60B532BB18E3E00D6F991 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4CA60B512BB18E3300D6F991 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		4CC6A9952BA390A50025F5DD = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +218,7 @@
 		4CC6A9A02BA390A50025F5DD /* Todo */ = {
 			isa = PBXGroup;
 			children = (
+				4CA60B532BB18E3E00D6F991 /* Utilities */,
 				4C43101C2BA39B42004BFE30 /* CustomsFonts */,
 				4CE5404D2BA9D16000280A3F /* Model */,
 				4CE5404B2BA9D13C00280A3F /* View */,
@@ -369,6 +380,7 @@
 				4C8C03642BAA38D600FA5D2D /* Data.xcdatamodeld in Sources */,
 				4CC6A9A22BA390A50025F5DD /* AppDelegate.swift in Sources */,
 				4CC6A9A42BA390A50025F5DD /* SceneDelegate.swift in Sources */,
+				4CA60B522BB18E3300D6F991 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

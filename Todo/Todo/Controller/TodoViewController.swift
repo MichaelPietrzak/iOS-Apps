@@ -39,7 +39,7 @@ class TodoViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TodoItemCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: Labels.itemCell, for: indexPath)
         let item = itemArr[indexPath.row]
         cell.textLabel?.text = item.title
         cell.accessoryType = item.done ? .checkmark : .none
@@ -74,8 +74,8 @@ class TodoViewController: UITableViewController {
     
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
         var textField = UITextField()
-        let alert = UIAlertController(title: "Add New Todo Item", message: "", preferredStyle: .alert)
-        let action = UIAlertAction(title: "Add Item", style: .default) { (action) in
+        let alert = UIAlertController(title: Alert.itemTitle, message: "", preferredStyle: .alert)
+        let action = UIAlertAction(title: Alert.actionTitle, style: .default) { (action) in
             
             let newItem = Item(context: self.context)
             newItem.title = textField.text!
@@ -85,7 +85,7 @@ class TodoViewController: UITableViewController {
             self.saveItems()
         }
         alert.addTextField { (alertTextField) in
-            alertTextField.placeholder = "Create new item"
+            alertTextField.placeholder = Alert.itemPlaceholder
             textField = alertTextField
         }
         alert.addAction(action)
