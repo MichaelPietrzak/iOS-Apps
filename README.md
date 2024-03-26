@@ -9,6 +9,7 @@ iOS Apps created for self development and practice.
 - [Weather](#weather)
 - [Coin](#coin)
 - [Hello](#hello)
+- [Todo](#todo)
 
 <br />
 
@@ -112,3 +113,41 @@ Coin app provides latest bitcoin price rates in different currencies.
 <br/>
 
 **Please note that this project requires own Firebase configuration with GoogleService-info file**
+
+<br />
+
+## Todo
+'Todo' app provides simple way to note your most important things to be done based on category with quick filtering, delete by swipe and tap to check it off with data stored in UserDefaults, NSCoder and Core Data.
+
+<h3>Illustrations</h3
+
+[<img src="README_images/todo1.png" alt="Category screen" width="400"/>](README_images/todo1.png)
+[<img src="README_images/todo2.png" alt="Create new category screen" width="400"/>](README_images/todo2.png)
+[<img src="README_images/todo3.png" alt="Item screen" width="400"/>](README_images/todo3.png)
+[<img src="README_images/todo4.png" alt="Create new item screen" width="400"/>](README_images/todo4.png)
+[<img src="README_images/todo5.png" alt="Search for item screen" width="400"/>](README_images/todo5.png)
+[<img src="README_images/todo6.png" alt="Delete item screen" width="400"/>](README_images/todo6.png)
+[<img src="README_images/todo7.png" alt="Light Mode screen" width="400"/>](README_images/todo7.png)
+
+<h3>Features</h3>
+
+- Screens: Categories, Items
+- Designed with TableViewControllers + custom TableViewCells
+- UIAlert implementation to add new items/categories
+- Persistent Local Data Storage using UserDefaults, NSCoder, Core Data
+- Data test using SQLite app from Mac App Store
+- Loading items based on Categories
+- filtering data from search bar using NSPredicate [visual in screenshot]
+- Implementation of delete items feature on swipe [visual in screenshot]
+- Check [from SFSymbols] feature if item is done or not
+- Custom Fonts and colors as per Apple Human Guidelines
+- Tested on physical and simulator
+- Dark Mode Support
+- Project structure based on MVC
+- DispatchQueue for performance
+- Auto Layout for all iPhones
+
+
+<br/>
+
+**Please note that this project requires own CoreData configuration**
