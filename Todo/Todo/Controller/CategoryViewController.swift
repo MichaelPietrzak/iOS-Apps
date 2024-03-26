@@ -33,6 +33,7 @@ class CategoryViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: Labels.categoryCell, for: indexPath) as! CategoryCell
         let item = categories[indexPath.row]
         cell.titleLabel.text = item.name
+        cell.tintColor = .systemYellow
         return cell
     } 
     

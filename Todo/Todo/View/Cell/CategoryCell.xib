@@ -31,16 +31,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.forward" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="YB6-tc-jaD">
+                                <rect key="frame" x="264.33333333333331" y="12.999999999999998" width="19.666666666666686" height="18.333333333333329"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
                             <constraint firstItem="Uvm-dq-r1Z" firstAttribute="top" secondItem="oik-sd-Dl4" secondAttribute="top" constant="10" id="IT6-1l-aOz"/>
+                            <constraint firstAttribute="bottom" secondItem="YB6-tc-jaD" secondAttribute="bottom" constant="10" id="IrQ-vc-qb7"/>
+                            <constraint firstAttribute="trailing" secondItem="YB6-tc-jaD" secondAttribute="trailing" constant="20" id="ZH0-uB-Eh3"/>
+                            <constraint firstItem="YB6-tc-jaD" firstAttribute="top" secondItem="oik-sd-Dl4" secondAttribute="top" constant="10" id="dS4-b3-tH8"/>
                             <constraint firstAttribute="bottom" secondItem="Uvm-dq-r1Z" secondAttribute="bottom" constant="10" id="pfb-dM-KWk"/>
                             <constraint firstItem="Uvm-dq-r1Z" firstAttribute="leading" secondItem="oik-sd-Dl4" secondAttribute="leading" constant="16" id="tlN-YH-DtK"/>
                         </constraints>
                     </view>
                 </subviews>
-                <color key="backgroundColor" systemColor="systemGray6Color"/>
                 <constraints>
                     <constraint firstItem="oik-sd-Dl4" firstAttribute="top" secondItem="Nj3-95-lkz" secondAttribute="top" id="JI7-pM-NwS"/>
                     <constraint firstAttribute="bottom" secondItem="oik-sd-Dl4" secondAttribute="bottom" id="LMC-vE-mQ8"/>
@@ -57,6 +62,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="arrow.forward" catalog="system" width="128" height="95"/>
         <systemColor name="systemGray6Color">
             <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
